@@ -3,11 +3,3 @@
 	margin: 0 auto;
 	padding: 0 10px;
 }
-
-.container > .left {
-	width: 376px;
-}
-
-.container > .right {
-	width: 564px;
-}
