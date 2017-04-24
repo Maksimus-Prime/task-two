@@ -1,5 +1,69 @@
-.container {
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
+/* Main styles */
+body {
+	font-family: "PT-Sans", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
+.container {
+	width: 1160px;
+	margin: 85px auto 105px auto;
+	padding: 0 63px 0 67px;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*.container > div[class*="side"] > div[class^="developer"]{
+	border: 1px solid #333;
+	
+}*/
+.container .left-side {
+	width: 445px;
+	margin-right: 72px;
+	float: left;	
+}
+.container .right-side {
+	width: 643px;
+	float: right;	
+}
+
+.developer-card {
+	padding-top: 6px;
+	padding-bottom: 80px;
+	
+	text-transform: uppercase;
+	text-align: center;
+}
+.developer-card .developer-photo img{
+	width: 210px;
+	height: 210px;
+
+	background-color: #3d6cb0;
+	border: 15px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px #3d6cb0;
+
+}
+.developer-card .developer-name{
+	padding-top: 27px;
+
+	font-size: 54px;
+	line-height: 54px;
+}
+.developer-card .developer-surname{
+	padding-bottom: 7px;
+
+	font-size: 64px;
+	line-height: 64px;
+}
+.developer-card .developer-job{
+	font-size: 26px;
+}
+/*.container > .left{
+
+}
+.container > .right{
+
+}*/
