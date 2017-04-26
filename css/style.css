@@ -17,16 +17,20 @@ body {
 }
 .container .left-side {
 	width: 445px;
-	margin-right: 72px;
+	margin-right: 60px;
+	padding-top: 6px;
 	float: left;	
 }
+.container .left-side > div[class^="developer"]:not(.developer-card) {
+	padding-right: 20px;
+}
 .container .right-side {
-	width: 643px;
+	width: 655px;
+	padding-top: 5px;
 	float: right;	
 }
 
 .developer-card {
-	padding-top: 6px;
 	padding-bottom: 36px;
 	margin-bottom: 40px;
 	
@@ -63,8 +67,13 @@ body {
 }
 .developer-profile {
 	padding-top: 15px;
-	padding-right: 20px;
 	margin-bottom: 30px;
+}
+.developer-profile-desc {
+	margin: 0;
+	padding: 0;
+
+	line-height: 1.2em;
 }
 div[class^="developer"] > .title {
 	margin-bottom: 15px;
@@ -108,9 +117,14 @@ div[class^="developer"] > .title h2::before {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.container .right-side div[class^="developer"] > .title h2 {
+	padding-left: 96px;
+}
+.container .right-side div[class^="developer"] > .title h2::after {
+	margin-left: 96px; /* margin и padding должны быть равны */
+}
 .developer-contact {
 	padding-top: 11px;
-	padding-right: 20px;
 	margin-bottom: 52px;
 
 	font-size: 21px;
@@ -148,14 +162,13 @@ div[class^="developer"] > .title h2::before {
 }
 .developer-skills {
 	padding-top: 10px;
-	padding-right: 20px;
 }
 .developer-skills div.title{
 	margin-bottom: 30px;
 }
 .developer-skills .rating-widjet{
 	text-align: center;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
 .developer-skills .raiting-title {
 	font-size: 26px;
@@ -210,10 +223,53 @@ div[class^="developer"] > .title h2::before {
 .developer-skills .title h2::before {
 	background-image: url(../img/skills-icon.png);
 }
-
-.developer-profile-desc {
+.developer-education .title h2::before {
+	background-image: url(../img/education-icon.png);
+}
+.developer-experience .title h2::before {
+	background-image: url(../img/experience-icon.png);
+}
+.developer-software .title h2::before {
+	background-image: url(../img/software-icon.png);
+}
+.developer-education div.title {
+	margin-bottom: 32px;
+}
+.developer-education .topic-title,
+.developer-education .subtitle {
 	margin: 0;
 	padding: 0;
 
-	line-height: 1.2em;
+	font-size: 26px;
 }
+.developer-education .topic-title {
+	margin-bottom: 6px;
+	color: #3d6cb0;;
+}
+.developer-education .topic-title span {
+	font-weight: normal;
+	text-transform: none;
+	color: #000;
+}
+.developer-education .developer-education-topic {
+	padding-left: 56px;
+	position: relative;
+}
+.developer-education .developer-education-topic::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 4px;
+	left: 12px;
+
+	background-color: #000;
+	border-radius: 50%;
+}
+.developer-education .developer-education-topic p {
+	margin: 0;
+	padding: 0;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
