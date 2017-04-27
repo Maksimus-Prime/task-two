@@ -15,16 +15,16 @@ body {
 	display: table;
 	clear: both;
 }
-.container .left-side {
+.container > .left-side {
 	width: 445px;
 	margin-right: 60px;
 	padding-top: 6px;
 	float: left;	
 }
-.container .left-side > div[class^="developer"]:not(.developer-card) {
+.container > .left-side > div[class^="developer"]:not(.developer-card) {
 	padding-right: 20px;
 }
-.container .right-side {
+.container > .right-side {
 	width: 655px;
 	padding-top: 5px;
 	float: right;	
@@ -116,6 +116,31 @@ div[class^="developer"] > .title h2::before {
 	background-color: #fff;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+/* Картинки для заголовков блоков */
+.developer-profile .title h2::before {
+	background-image: url(../img/profile-icon.png);
+}
+.developer-contact .title h2::before {
+	background-image: url(../img/phone-icon.png);
+}
+.developer-skills .title h2::before {
+	background-image: url(../img/skills-icon.png);
+}
+.developer-education .title h2::before {
+	background-image: url(../img/education-icon.png);
+	width: 76px;
+	height: 74px;
+}
+.developer-experience .title h2::before {
+	background-image: url(../img/experience-icon.png);
+	width: 79px;
+	height: 76px;
+}
+.developer-software .title h2::before {
+	background-image: url(../img/software-icon.png);
+	width: 76px;
+	height: 74px;
 }
 .container .right-side div[class^="developer"] > .title h2 {
 	padding-left: 96px;
@@ -213,30 +238,21 @@ div[class^="developer"] > .title h2::before {
 	background-color: #3d6cb0;
 	color: #fff;
 }
-/* Картинки для заголовков блоков */
-.developer-profile .title h2::before {
-	background-image: url(../img/profile-icon.png);
-}
-.developer-contact .title h2::before {
-	background-image: url(../img/phone-icon.png);
-}
-.developer-skills .title h2::before {
-	background-image: url(../img/skills-icon.png);
-}
-.developer-education .title h2::before {
-	background-image: url(../img/education-icon.png);
-}
-.developer-experience .title h2::before {
-	background-image: url(../img/experience-icon.png);
-}
-.developer-software .title h2::before {
-	background-image: url(../img/software-icon.png);
+.developer-education,
+.developer-experience {
+	margin-bottom: 67px;
 }
 .developer-education div.title {
 	margin-bottom: 32px;
 }
+.developer-experience div.title {
+	margin-bottom: 49px;
+}
 .developer-education .topic-title,
-.developer-education .subtitle {
+.developer-education .subtitle,
+.developer-experience .topic-title,
+.developer-experience .subtitle
+ {
 	margin: 0;
 	padding: 0;
 
@@ -246,16 +262,23 @@ div[class^="developer"] > .title h2::before {
 	margin-bottom: 6px;
 	color: #3d6cb0;;
 }
-.developer-education .topic-title span {
+.developer-experience .topic-title {
+	margin-bottom: 6px;
+}
+.developer-education .topic-title span,
+.developer-experience .topic-title span {
+	padding-left: 7px;
 	font-weight: normal;
 	text-transform: none;
 	color: #000;
 }
-.developer-education .developer-education-topic {
+.developer-education .developer-education-topic,
+.developer-experience .developer-experience-topic {
 	padding-left: 56px;
 	position: relative;
 }
-.developer-education .developer-education-topic::before {
+.developer-education .developer-education-topic::before,
+.developer-experience .developer-experience-topic::before {
 	content: "";
 	position: absolute;
 	width: 20px;
@@ -266,10 +289,62 @@ div[class^="developer"] > .title h2::before {
 	background-color: #000;
 	border-radius: 50%;
 }
-.developer-education .developer-education-topic p {
+.developer-education .developer-education-topic p,
+.developer-experience .developer-experience-topic p {
 	margin: 0;
 	padding: 0;
 	margin-top: 8px;
 	margin-bottom: 15px;
 }
+.developer-software div.title {
+	margin-bottom: 32px;
+}
+.developer-software .developer-software-content > .left-side {
+	width: 358px;
+	float: left;
+	margin-left: 8px;
+}
+.developer-software .developer-software-content > .right-side {
+	width: 289px;
+	float: right;
+}
+.developer-software .software-item {
+	position: relative;
+	margin-bottom: 61px;
 
+	font-size: 26px;
+}
+.developer-software .software-item::after {
+	content: "";
+	position: absolute;
+	top: 43px;
+	left: 0;
+	width: 286px;
+	height: 23px;
+}
+.developer-software .left-side .software-item:nth-child(2)::after,
+.developer-software .right-side .software-item:nth-child(2)::after{
+	top: 42px;
+}
+.developer-software .left-side .software-item:nth-child(3)::after,
+.developer-software .right-side .software-item:nth-child(3)::after{
+	top: 38px;
+}
+.developer-software .left-side .software-item:nth-child(1)::after {
+	background-image: linear-gradient(to right, #3d6cb0 91%, #e6e6e6 91%);
+}
+.developer-software .left-side .software-item:nth-child(2)::after {
+	background-image: linear-gradient(to right, #3d6cb0 70%, #e6e6e6 70%);
+}
+.developer-software .left-side .software-item:nth-child(3)::after {
+	background-image: linear-gradient(to right, #3d6cb0 56%, #e6e6e6 56%);
+}
+.developer-software .right-side .software-item:nth-child(1)::after {
+	background-image: linear-gradient(to right, #3d6cb0 82%, #e6e6e6 82%);
+}
+.developer-software .right-side .software-item:nth-child(2)::after {
+	background-image: linear-gradient(to right, #3d6cb0 61%, #e6e6e6 61%);
+}
+.developer-software .right-side .software-item:nth-child(3)::after {
+	background-image: linear-gradient(to right, #3d6cb0 91%, #e6e6e6 91%);
+}
