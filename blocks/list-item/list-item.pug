@@ -1,0 +1,6 @@
+mixin list-item(title,date,subtitle,description)
+	.list-item
+		h3(class="list-item__title")= title
+			span= date
+		span(class="list-item__subtitle")=subtitle
+		p(class="list-item__description")= description

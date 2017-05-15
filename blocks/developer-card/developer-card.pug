@@ -1,0 +1,8 @@
+.developer-card
+	mixin card(name,surname,job)
+		.developer-card__photo
+			img(src="#")
+		.developer-card__name= name
+		.developer-card__surname= surname
+		.developer-card__job= job
+	+card('Name here', 'Surname', 'Graphic Designer')

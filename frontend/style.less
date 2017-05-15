@@ -1,0 +1,84 @@
+@import "../node_modules/normalize-css/normalize.css";
+html {
+	font-size: 17px;
+}
+
+.layout {
+	width: 100%;
+	max-width: 1236px;
+	margin: 85px auto 85px auto;
+	padding: 0 4.82% 0 4.82%;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.left-column {
+	width: 36.8%;
+	margin-right: 6.79%;
+	float: left;
+
+	& > div[class^="developer"] {
+		margin-bottom: 15.5%;
+		& > .block-header {
+			margin-bottom: 3.3%;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.right-column {
+	width: 56.4%;
+	float: right;	
+}
+
+
+@import "../blocks/developer-card/developer-card.less";
+@import "../blocks/developer-profile/developer-profile.less";
+@import "../blocks/developer-contact/developer-contact.less";
+@import "../blocks/block-header/block-header.less";
+@import "../blocks/list-item/list-item.less";
+@import "../blocks/developer-contact/developer-contact.less";
+@import "../blocks/contact-item/contact-item.less";
+@import "../blocks/developer-skills/developer-skills.less";
+@import "../blocks/skills-item/skills-item.less";
+
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1324px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 860px) {
+	html {
+		font-size: 14px;
+	}
+	.left-column, .right-column {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 12px;
+	}
+	.left-column, .right-column {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,42 @@
+.block-header {
+	&__title {
+		position: relative;
+		margin: 0;
+		padding-left: 20.44%;
+		padding-bottom: 3.3%;
+
+		letter-spacing: -0.1875rem;
+		color: #3d6cb0;
+		font-size: 2.65rem;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			position: absolute;
+			margin-left: 20.8%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 35%;
+			border-top: 0.3rem solid #3d6cb0;
+			z-index: -1;			
+		}
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 4.65rem;
+			height: 4.65rem;
+			left: 0;
+			top: -24%;
+
+			background-color: #fff;
+			background-size: contain;
+			background-repeat: no-repeat;			
+		}
+		span {
+			background-color: #fff;
+			padding-right: 7px;
+		}
+	}
+}
