@@ -14,11 +14,6 @@ html {
 	display: table;
 	clear: both;
 }
-.left-column {
-	width: 36.8%;
-	margin-right: 6.79%;
-	float: left;
-}
 
 .left-column {
 	width: 36.8%;
@@ -83,12 +78,29 @@ html {
 	html {
 		font-size: 14px;
 	}
+
 	.left-column, .right-column {
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
+
+		& > div[class^="developer"] {
+			margin-bottom: 10.3%;
+
+			&:last-child {
+				margin-bottom: 10.3%;
+			}
+		}	
 	}
+	.right-column {
+		& > div[class^="developer"] {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }
 @media screen and (max-width: 450px) {
 	html {
@@ -98,5 +110,21 @@ html {
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
+
+		& > div[class^="developer"] {
+			margin-bottom: 15.5%;
+
+			&:last-child {
+				margin-bottom: 15.5%;
+			}
+		}	
 	}
+	.right-column {
+		& > div[class^="developer"] {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }

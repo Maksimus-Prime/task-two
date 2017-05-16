@@ -423,11 +423,6 @@ html {
   margin-right: 6.79%;
   float: left;
 }
-.left-column {
-  width: 36.8%;
-  margin-right: 6.79%;
-  float: left;
-}
 .left-column > div[class^="developer"] {
   margin-bottom: 15.5%;
 }
@@ -727,6 +722,17 @@ html {
     margin-right: auto;
     float: none;
   }
+  .left-column > div[class^="developer"],
+  .right-column > div[class^="developer"] {
+    margin-bottom: 10.3%;
+  }
+  .left-column > div[class^="developer"]:last-child,
+  .right-column > div[class^="developer"]:last-child {
+    margin-bottom: 10.3%;
+  }
+  .right-column > div[class^="developer"]:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 450px) {
   html {
@@ -737,5 +743,16 @@ html {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .left-column > div[class^="developer"],
+  .right-column > div[class^="developer"] {
+    margin-bottom: 15.5%;
+  }
+  .left-column > div[class^="developer"]:last-child,
+  .right-column > div[class^="developer"]:last-child {
+    margin-bottom: 15.5%;
+  }
+  .right-column > div[class^="developer"]:last-child {
+    margin-bottom: 0;
   }
 }
