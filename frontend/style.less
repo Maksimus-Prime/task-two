@@ -6,7 +6,7 @@ html {
 .layout {
 	width: 100%;
 	max-width: 1236px;
-	margin: 85px auto 85px auto;
+	margin: 6.3% auto 6.3% auto;
 	padding: 0 4.82% 0 4.82%;
 }
 .clearfix::after{
@@ -14,6 +14,12 @@ html {
 	display: table;
 	clear: both;
 }
+.left-column {
+	width: 36.8%;
+	margin-right: 6.79%;
+	float: left;
+}
+
 .left-column {
 	width: 36.8%;
 	margin-right: 6.79%;
@@ -27,12 +33,22 @@ html {
 		&:last-child {
 			margin-bottom: 0;
 		}
-	}
+	}	
 }
 
 .right-column {
 	width: 56.4%;
 	float: right;	
+	
+	& > div[class^="developer"] {
+		margin-bottom: 10.1%;
+		& > .block-header {
+			margin-bottom: 3.3%;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 
@@ -45,12 +61,14 @@ html {
 @import "../blocks/contact-item/contact-item.less";
 @import "../blocks/developer-skills/developer-skills.less";
 @import "../blocks/skills-item/skills-item.less";
+@import "../blocks/developer-education/developer-education.less";
+@import "../blocks/developer-experience/developer-experience.less";
+@import "../blocks/list-item/list-item.less";
+@import "../blocks/developer-software/developer-software.less";
+@import "../blocks/software-item/software-item.less";
 
-@media screen and (max-width: 1920px) {
-	html {
-		font-size: 18px;
-	}
-}
+
+// Для 1920 сделать font-size: 18px;
 @media screen and (max-width: 1324px) {
 	html {
 		font-size: 16px;

@@ -1,3 +1,4 @@
-mixin software-item(name)
+mixin software-item(title,value)
 	.software-item
-		div= name
+		h3.software-item__title=title
+		.software-item__value(style={width:''+value+'%'})

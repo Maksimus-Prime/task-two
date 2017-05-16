@@ -1,10 +1,12 @@
-.developer-software
+.developer-software(class="clearfix")
 	include ../block-header/block-header.pug
 	include ../software-item/software-item.pug
-	+block-header('Software')
-	+software-item('Photoshop')
-	+software-item('ILLUSTRATOR')
-	+software-item('INDESIGN')
-	+software-item('DREAMWEAVER')
-	+software-item('AFTER EFFECTS')
-	+software-item('HTML&amp;CSS3')
+	+block-header('Software','15')
+	.developer-software__left-column
+		+software-item('Photoshop','90.1')
+		+software-item('ILLUSTRATOR','70.5')
+		+software-item('INDESIGN','56')
+	.developer-software__right-column
+		+software-item('DREAMWEAVER','82.6')
+		+software-item('AFTER EFFECTS','61.6')
+		+software-item('HTML&CSS3','90.5')

@@ -410,13 +410,18 @@ html {
 .layout {
   width: 100%;
   max-width: 1236px;
-  margin: 85px auto 85px auto;
+  margin: 6.3% auto 6.3% auto;
   padding: 0 4.82% 0 4.82%;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+.left-column {
+  width: 36.8%;
+  margin-right: 6.79%;
+  float: left;
 }
 .left-column {
   width: 36.8%;
@@ -435,6 +440,15 @@ html {
 .right-column {
   width: 56.4%;
   float: right;
+}
+.right-column > div[class^="developer"] {
+  margin-bottom: 10.1%;
+}
+.right-column > div[class^="developer"] > .block-header {
+  margin-bottom: 3.3%;
+}
+.right-column > div[class^="developer"]:last-child {
+  margin-bottom: 0;
 }
 .developer-card {
   padding-top: 3%;
@@ -518,16 +532,16 @@ html {
   padding-right: 7px;
 }
 .list-item {
-  padding-left: 56px;
+  padding-left: 8%;
   position: relative;
 }
 .list-item::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 4px;
-  left: 12px;
+  width: 1.3rem;
+  height: 1.3rem;
+  top: 2.5%;
+  left: 1.7%;
   background-color: #000;
   border-radius: 50%;
 }
@@ -535,20 +549,34 @@ html {
 .list-item__subtitle {
   margin: 0;
   padding: 0;
-  font-size: 26px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
 .list-item__title {
   color: #3d6cb0;
+  padding-bottom: 0.6%;
 }
 .list-item__title span {
-  padding-left: 7px;
+  padding-left: 2.8%;
   font-weight: normal;
   text-transform: none;
   color: #000;
 }
+.list-item__subtitle {
+  display: block;
+  padding-bottom: 1.3%;
+}
 .list-item__description {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  line-height: 1.11rem;
+}
+@media screen and (max-width: 450px) {
+  .list-item__title span {
+    display: block;
+    padding-left: 0;
+  }
 }
 .contact-item {
   font-size: 1.33em;
@@ -601,10 +629,82 @@ html {
 .skills-item__rating li:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 1920px) {
-  html {
-    font-size: 18px;
+.developer-education {
+  padding-top: 10px;
+}
+.developer-education .block-header__title::before {
+  background-image: url(img/education-icon.png);
+}
+.developer-education .list-item {
+  margin-bottom: 3%;
+}
+.developer-education .list-item:last-child {
+  margin-bottom: 0;
+}
+.developer-experience .block-header__title::before {
+  background-image: url(img/experience-icon.png);
+}
+.developer-experience .list-item {
+  margin-bottom: 3%;
+}
+.developer-experience .list-item__title {
+  color: #000;
+}
+.developer-experience .list-item:last-child {
+  margin-bottom: 0;
+}
+.developer-software .block-header__title::before {
+  background-image: url(img/software-icon.png);
+}
+.developer-software__left-column {
+  width: 44.5%;
+  float: left;
+  margin-right: 11%;
+}
+.developer-software__right-column {
+  width: 44.5%;
+  float: left;
+}
+.developer-software .software-item {
+  margin-bottom: 9%;
+}
+.developer-software .software-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 860px) {
+  .developer-software__left-column,
+  .developer-software__right-column {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
+  .developer-software .software-item:last-child {
+    margin-bottom: 9%;
+  }
+}
+.software-item {
+  position: relative;
+}
+.software-item__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4.9%;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.software-item__value {
+  background-color: #3d6cb0;
+  height: 1.42rem;
+}
+.software-item__value::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.42rem;
+  background-color: #e6e6e6;
+  z-index: -1;
 }
 @media screen and (max-width: 1324px) {
   html {

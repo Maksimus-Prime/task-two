@@ -1,0 +1,39 @@
+.developer-software {
+	.block-header {
+		&__title::before {
+			background-image: url(software-icon.png);
+		}
+	}
+	&__left-column {
+		width: 44.5%;
+		float: left;
+		margin-right: 11%;	
+	}
+	&__right-column {
+		width: 44.5%;
+		float: left;		
+	}
+	.software-item {
+		margin-bottom: 9%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.developer-software {
+		&__left-column, &__right-column {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+		}		
+		.software-item {
+			&:last-child {
+				margin-bottom: 9%;
+			}
+		}
+	}
+
+}
