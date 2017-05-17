@@ -1,0 +1,1 @@
+require("./software-item.less");

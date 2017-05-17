@@ -30,10 +30,10 @@ module.exports = {
             pretty: true
           }
         }, {
-          test: /\.less$/,
-          loader: ExtractTextPlugin.extract("style-loader","css-loader!less-loader")
+          test: /\.(css|less)$/,
+          loader: ExtractTextPlugin.extract("style-loader","css-loader!autoprefixer-loader!less-loader")
         }, {
-          test: /\.(jpe?g|png|gif|svg)$/,
+          test: /\.(jpe?g|png|svg|gif)$/,
           loader: "file-loader?name=img/[name].[ext]"
         }]
   },

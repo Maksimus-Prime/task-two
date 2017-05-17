@@ -1,2 +1,2 @@
-require('./style.less');
-let lol = "olololololo";
+require("./style.less");
+require.context("./../blocks",true,/\.js$/);

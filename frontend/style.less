@@ -46,24 +46,11 @@ html {
 	}
 }
 
-
-@import "../blocks/developer-card/developer-card.less";
-@import "../blocks/developer-profile/developer-profile.less";
-@import "../blocks/developer-contact/developer-contact.less";
-@import "../blocks/block-header/block-header.less";
-@import "../blocks/list-item/list-item.less";
-@import "../blocks/developer-contact/developer-contact.less";
-@import "../blocks/contact-item/contact-item.less";
-@import "../blocks/developer-skills/developer-skills.less";
-@import "../blocks/skills-item/skills-item.less";
-@import "../blocks/developer-education/developer-education.less";
-@import "../blocks/developer-experience/developer-experience.less";
-@import "../blocks/list-item/list-item.less";
-@import "../blocks/developer-software/developer-software.less";
-@import "../blocks/software-item/software-item.less";
-
-
-// Для 1920 сделать font-size: 18px;
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: 18px;
+	}
+}
 @media screen and (max-width: 1324px) {
 	html {
 		font-size: 16px;
@@ -80,7 +67,7 @@ html {
 	}
 
 	.left-column, .right-column {
-		width: 70%;
+		width: 75%;
 		margin-left: auto;
 		margin-right: auto;
 		float: none;

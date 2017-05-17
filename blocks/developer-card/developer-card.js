@@ -1,0 +1,1 @@
+require("./developer-card.less");
