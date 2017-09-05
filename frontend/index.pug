@@ -1,17 +1,25 @@
 doctype html
 html
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width")
-		title Main page
-	body
-		.layout.clearfix
-			.left-column
-				include ../blocks/developer-card/developer-card.pug
-				include ../blocks/developer-profile/developer-profile.pug
-				include ../blocks/developer-contact/developer-contact.pug
-				include ../blocks/developer-skills/developer-skills.pug
-			.right-column
-				include ../blocks/developer-education/developer-education.pug
-				include ../blocks/developer-experience/developer-experience.pug
-				include ../blocks/developer-software/developer-software.pug
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        title CV
+    body
+        include ../blocks/developer-card/developer-card.pug
+        include ../blocks/developer-profile/developer-profile.pug
+        include ../blocks/developer-contact/developer-contact.pug
+        include ../blocks/developer-skills/developer-skills.pug
+        include ../blocks/developer-education/developer-education.pug
+        include ../blocks/developer-experience/developer-experience.pug
+        include ../blocks/developer-software/developer-software.pug
+        -var data = require('./data.json')
+        main.layout.clearfix
+            .left-column
+                +developer-card(data)
+                +developer-profile("Profile", data)
+                +developer-contact("Contact", data)
+                +developer-skills("Skills", data)
+            .right-column
+                +developer-education("Education", data)
+                +developer-experience("Experience", data)
+                +developer-software("Software", data)

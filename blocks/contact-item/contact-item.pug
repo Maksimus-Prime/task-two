@@ -1,4 +1,12 @@
-mixin contact-item(name,value)
-	.contact-item
-		.contact-item__name=name
-		.contact-item__value=value
+mixin contact-item(name,namevalue,type,typevalue)
+    .contact-item
+        .contact-item__name=name
+        .contact-item__value
+            if type == "tel"
+                a(href="tel: " + typevalue)=namevalue
+            else if type == "mail"
+                a(href="mailto: " + typevalue)=namevalue
+            else if type == "site"
+                a(href="" + typevalue + "" target="_blank" rel="noopener noreferrer")=namevalue
+            else
+                a(href="/mock-address/change-me")=namevalue

@@ -423,26 +423,26 @@ html {
   margin-right: 6.79%;
   float: left;
 }
-.left-column > div[class^="developer"] {
+.left-column > section[class^="developer"] {
   margin-bottom: 15.5%;
 }
-.left-column > div[class^="developer"] > .block-header {
+.left-column > section[class^="developer"] > .block-header {
   margin-bottom: 3.3%;
 }
-.left-column > div[class^="developer"]:last-child {
+.left-column > section[class^="developer"]:last-child {
   margin-bottom: 0;
 }
 .right-column {
   width: 56.4%;
   float: right;
 }
-.right-column > div[class^="developer"] {
+.right-column > section[class^="developer"] {
   margin-bottom: 10.1%;
 }
-.right-column > div[class^="developer"] > .block-header {
+.right-column > section[class^="developer"] > .block-header {
   margin-bottom: 3.3%;
 }
-.right-column > div[class^="developer"]:last-child {
+.right-column > section[class^="developer"]:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1920px) {
@@ -471,15 +471,15 @@ html {
     margin-right: auto;
     float: none;
   }
-  .left-column > div[class^="developer"],
-  .right-column > div[class^="developer"] {
+  .left-column > section[class^="developer"],
+  .right-column > section[class^="developer"] {
     margin-bottom: 10.3%;
   }
-  .left-column > div[class^="developer"]:last-child,
-  .right-column > div[class^="developer"]:last-child {
+  .left-column > section[class^="developer"]:last-child,
+  .right-column > section[class^="developer"]:last-child {
     margin-bottom: 10.3%;
   }
-  .right-column > div[class^="developer"]:last-child {
+  .right-column > section[class^="developer"]:last-child {
     margin-bottom: 0;
   }
 }
@@ -493,17 +493,21 @@ html {
     margin-left: 0;
     margin-right: 0;
   }
-  .left-column > div[class^="developer"],
-  .right-column > div[class^="developer"] {
+  .left-column > section[class^="developer"],
+  .right-column > section[class^="developer"] {
     margin-bottom: 15.5%;
   }
-  .left-column > div[class^="developer"]:last-child,
-  .right-column > div[class^="developer"]:last-child {
+  .left-column > section[class^="developer"]:last-child,
+  .right-column > section[class^="developer"]:last-child {
     margin-bottom: 15.5%;
   }
-  .right-column > div[class^="developer"]:last-child {
+  .right-column > section[class^="developer"]:last-child {
     margin-bottom: 0;
   }
+}
+.block-header {
+  display: inline-block;
+  width: 100%;
 }
 .block-header__title {
   position: relative;
@@ -556,12 +560,17 @@ html {
 .contact-item:last-child {
   padding-bottom: 0;
 }
+.contact-item__value a {
+  text-decoration: none;
+  color: #000;
+}
 .developer-card {
   padding-top: 3%;
   padding-bottom: 6.5%;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -0.12rem;
+  word-wrap: break-word;
 }
 .developer-card__photo img {
   width: 13rem;
@@ -570,7 +579,6 @@ html {
   border: 0.962rem solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 0 0.0625rem #3d6cb0;
-  background-size: cover;
 }
 .developer-card__name {
   padding-top: 7.4%;

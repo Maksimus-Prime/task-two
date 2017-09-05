@@ -1,8 +1,7 @@
-.developer-card
-	mixin card(name,surname,job)
-		.developer-card__photo
-			img(src="img/dd.jpg")
-		.developer-card__name= name
-		.developer-card__surname= surname
-		.developer-card__job= job
-	+card('Name here', 'Surname', 'Graphic Designer')
+mixin developer-card(list)
+    section.developer-card
+        .developer-card__photo
+            img(src=""+list.card.image+"" alt="developer's avatar")
+        .developer-card__name=list.card.name
+        .developer-card__surname=list.card.surname
+        .developer-card__job=list.card.job

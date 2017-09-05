@@ -1,8 +1,7 @@
-.developer-skills
-	include ../block-header/block-header.pug
-	include ../skills-item/skills-item.pug
-	+block-header('Skills')
-	+skills-item('Creative',9)
-	+skills-item('Teamwork',11)
-	+skills-item('Innovate',6)
-	+skills-item('Communication',11)
+mixin developer-skills(blockname, list)
+    include ../block-header/block-header.pug
+    include ../skills-item/skills-item.pug
+    section.developer-skills
+        +block-header(blockname)
+        each skill in list.skills
+            +skills-item(skill.name, skill.value)
