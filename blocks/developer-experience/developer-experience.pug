@@ -1,7 +1,7 @@
-.developer-experience
-	include ../block-header/block-header.pug
-	include ../list-item/list-item.pug
-	+block-header('Experience')
-	+list-item('MASTER DEGREE','// Feb 2011 - Jun 2014','UNIVERSITY NAME','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-	+list-item('MASTER DEGREE','// Feb 2011 - Jun 2014','UNIVERSITY NAME','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-	+list-item('MASTER DEGREE','// Feb 2011 - Jun 2014','UNIVERSITY NAME','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+mixin developer-experience(blockname, list)
+    include ../block-header/block-header.pug
+    include ../list-item/list-item.pug
+    section.developer-experience
+        +block-header(blockname)
+        each item in list.experience
+            +list-item(item.name, item.date, item.subtitle, item.description)
