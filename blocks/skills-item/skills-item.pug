@@ -1,11 +1,10 @@
 mixin skills-item(title,value)
-	.skills-item
-		.skills-item__title=title
-		ul.skills-item__rating
-			-for (var x = 0; x < value; x++) {
-				li.active
-			-}
-			-for (var x = value; x < 12; x++) {
-				li
-			-}
-
+    .skills-item
+        .skills-item__title=title
+        ul.skills-item__rating
+            -for (var x = 0; x < value; x++) {
+                li.active
+            -}
+            -for (var x = value; x < 12; x++) {
+                li
+            -}
