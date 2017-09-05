@@ -1,12 +1,11 @@
-.developer-software(class="clearfix")
-	include ../block-header/block-header.pug
-	include ../software-item/software-item.pug
-	+block-header('Software','15')
-	.developer-software__left-column
-		+software-item('Photoshop','90.1')
-		+software-item('ILLUSTRATOR','70.5')
-		+software-item('INDESIGN','56')
-	.developer-software__right-column
-		+software-item('DREAMWEAVER','82.6')
-		+software-item('AFTER EFFECTS','61.6')
-		+software-item('HTML&CSS3','90.5')
+mixin developer-software(blockname, list)
+    include ../block-header/block-header.pug
+    include ../software-item/software-item.pug
+    section.developer-software.clearfix
+        +block-header(blockname)
+        .developer-software__left-column
+            each item in list.software.left
+                +software-item(item.name, item.value)
+        .developer-software__right-column
+            each item1 in list.software.right
+                +software-item(item1.name, item1.value)
