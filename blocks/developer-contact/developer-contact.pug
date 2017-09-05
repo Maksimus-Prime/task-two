@@ -1,8 +1,7 @@
-.developer-contact
-	include ../block-header/block-header.pug
-	include ../contact-item/contact-item.pug
-	+block-header('Contact')
-	+contact-item('ADDRESS','Main Street, City')
-	+contact-item('E-MAIL','contact@domain.com')
-	+contact-item('PHONE','555-555-555')
-	+contact-item('WEBSITE','www.yourweb.com')
+mixin developer-contact(blockname, list)
+    section.developer-contact
+        include ../block-header/block-header.pug
+        include ../contact-item/contact-item.pug
+        +block-header('Contact')
+        each contact in list.contacts
+           +contact-item(contact.name, contact.value, contact.type, contact.typevalue)
