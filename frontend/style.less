@@ -1,117 +1,117 @@
 @import "../node_modules/normalize-css/normalize.css";
 html {
-	font-size: 17px;
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+    @media screen and (max-width: 1920px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 1324px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 860px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 12px;
+    }
 }
-
 .layout {
-	width: 100%;
-	max-width: 1236px;
-	margin: 6.3% auto 6.3% auto;
-	padding: 0 4.82% 0 4.82%;
+    width: 100%;
+    max-width: 1236px;
+    margin: 6.3% auto 6.3% auto;
+    padding: 0 4.82% 0 4.82%;
 }
 .clearfix::after{
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .left-column {
-	width: 36.8%;
-	margin-right: 6.79%;
-	float: left;
-
-	& > section[class^="developer"] {
-		margin-bottom: 15.5%;
-		& > .block-header {
-			margin-bottom: 3.3%;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}	
+    width: 36.8%;
+    margin-right: 6.79%;
+    float: left;
+    & > section[class^="developer"] {
+        margin-bottom: 15.5%;
+        & > .block-header {
+            margin-bottom: 3.3%;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 860px) {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        & > section[class^="developer"] {
+            margin-bottom: 10.3%;
+            &:last-child {
+                margin-bottom: 10.3%;
+            }
+        }
+    }
+    @media screen and (max-width: 450px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        & > section[class^="developer"] {
+            margin-bottom: 15.5%;
+            &:last-child {
+                margin-bottom: 15.5%;
+            }
+        }
+    }
 }
-
 .right-column {
-	width: 56.4%;
-	float: right;	
-	
-	& > section[class^="developer"] {
-		margin-bottom: 10.1%;
-		& > .block-header {
-			margin-bottom: 3.3%;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
-
-@media screen and (max-width: 1920px) {
-	html {
-		font-size: 18px;
-	}
-}
-@media screen and (max-width: 1324px) {
-	html {
-		font-size: 16px;
-	}
-}
-@media screen and (max-width: 1024px) {
-	html {
-		font-size: 14px;
-	}
-}
-@media screen and (max-width: 860px) {
-	html {
-		font-size: 14px;
-	}
-
-	.left-column, .right-column {
-		width: 75%;
-		margin-left: auto;
-		margin-right: auto;
-		float: none;
-
-		& > section[class^="developer"] {
-			margin-bottom: 10.3%;
-
-			&:last-child {
-				margin-bottom: 10.3%;
-			}
-		}	
-	}
-	.right-column {
-		& > section[class^="developer"] {
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-
-}
-@media screen and (max-width: 450px) {
-	html {
-		font-size: 12px;
-	}
-	.left-column, .right-column {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-
-		& > section[class^="developer"] {
-			margin-bottom: 15.5%;
-
-			&:last-child {
-				margin-bottom: 15.5%;
-			}
-		}	
-	}
-	.right-column {
-		& > section[class^="developer"] {
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-
+    width: 56.4%;
+    float: right;   
+    & > section[class^="developer"] {
+        margin-bottom: 10.1%;
+        & > .block-header {
+            margin-bottom: 3.3%;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 860px) {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        & > section[class^="developer"] {
+            margin-bottom: 10.3%;
+            &:last-child {
+                margin-bottom: 10.3%;
+            }
+        }
+        & > section[class^="developer"] {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        } 
+    }
+    @media screen and (max-width: 450px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        & > section[class^="developer"] {
+            margin-bottom: 15.5%;
+            &:last-child {
+                margin-bottom: 15.5%;
+            }
+        }
+        & > section[class^="developer"] {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
