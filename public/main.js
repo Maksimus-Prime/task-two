@@ -47,31 +47,38 @@
 	"use strict";
 
 	__webpack_require__(1);
-	__webpack_require__(2);
+
+	__webpack_require__(17);
+	__webpack_require__(18);
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	'use strict';
+
+	var faviconsContext = __webpack_require__(2);
+	faviconsContext.keys().forEach(faviconsContext);
 
 /***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./block-header/block-header.js": 3,
-		"./contact-item/contact-item.js": 5,
-		"./developer-card/developer-card.js": 7,
-		"./developer-contact/developer-contact.js": 9,
-		"./developer-education/developer-education.js": 11,
-		"./developer-experience/developer-experience.js": 13,
-		"./developer-profile/developer-profile.js": 15,
-		"./developer-skills/developer-skills.js": 17,
-		"./developer-software/developer-software.js": 19,
-		"./list-item/list-item.js": 21,
-		"./skills-item/skills-item.js": 23,
-		"./software-item/software-item.js": 25
+		"./android-chrome-192x192.png": 3,
+		"./android-chrome-512x512.png": 4,
+		"./apple-touch-icon.png": 5,
+		"./browserconfig.xml": 6,
+		"./favicon-16x16.png": 7,
+		"./favicon-32x32.png": 8,
+		"./favicon.ico": 9,
+		"./manifest.json": 10,
+		"./mstile-144x144.png": 11,
+		"./mstile-150x150.png": 12,
+		"./mstile-310x150.png": 13,
+		"./mstile-310x310.png": 14,
+		"./mstile-70x70.png": 15,
+		"./safari-pinned-tab.svg": 16
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -91,113 +98,123 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(4);
+	module.exports = __webpack_require__.p + "favicons/android-chrome-192x192.png";
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/android-chrome-512x512.png";
 
 /***/ },
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(6);
+	module.exports = __webpack_require__.p + "favicons/apple-touch-icon.png";
 
 /***/ },
 /* 6 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/browserconfig.xml";
 
 /***/ },
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(8);
+	module.exports = __webpack_require__.p + "favicons/favicon-16x16.png";
 
 /***/ },
 /* 8 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/favicon-32x32.png";
 
 /***/ },
 /* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(10);
+	module.exports = __webpack_require__.p + "favicons/favicon.ico";
 
 /***/ },
 /* 10 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/manifest.json";
 
 /***/ },
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(12);
+	module.exports = __webpack_require__.p + "favicons/mstile-144x144.png";
 
 /***/ },
 /* 12 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/mstile-150x150.png";
 
 /***/ },
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(14);
+	module.exports = __webpack_require__.p + "favicons/mstile-310x150.png";
 
 /***/ },
 /* 14 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/mstile-310x310.png";
 
 /***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(16);
+	module.exports = __webpack_require__.p + "favicons/mstile-70x70.png";
 
 /***/ },
 /* 16 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = __webpack_require__.p + "favicons/safari-pinned-tab.svg";
 
 /***/ },
 /* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(18);
-
-/***/ },
-/* 18 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./block-header/block-header.js": 19,
+		"./contact-item/contact-item.js": 21,
+		"./developer-card/developer-card.js": 23,
+		"./developer-contact/developer-contact.js": 25,
+		"./developer-education/developer-education.js": 27,
+		"./developer-experience/developer-experience.js": 29,
+		"./developer-profile/developer-profile.js": 31,
+		"./developer-skills/developer-skills.js": 33,
+		"./developer-software/developer-software.js": 35,
+		"./list-item/list-item.js": 37,
+		"./skills-item/skills-item.js": 39,
+		"./software-item/software-item.js": 41
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 18;
+
 
 /***/ },
 /* 19 */
@@ -251,6 +268,118 @@
 
 /***/ },
 /* 26 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(28);
+
+/***/ },
+/* 28 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(30);
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(32);
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(34);
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(36);
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(38);
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(40);
+
+/***/ },
+/* 40 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(42);
+
+/***/ },
+/* 42 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
