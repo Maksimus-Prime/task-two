@@ -1,0 +1,38 @@
+{
+  "name": "maks",
+  "version": "1.0.0",
+  "description": "Webpage: https://maksimus-prime.github.io/task-two-cv/public/",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.7",
+    "less-loader": "^4.0.3",
+    "less": "^2.7.2",
+    "normalize-css": "^2.3.1",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.12.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm i": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maksimus-Prime/task-two-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maksimus-Prime/task-two-cv/issues"
+  },
+  "homepage": "https://github.com/Maksimus-Prime/task-two-cv#readme"
+}

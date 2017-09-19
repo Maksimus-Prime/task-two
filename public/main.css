@@ -439,7 +439,6 @@ html {
   width: 100%;
   max-width: 1236px;
   margin: 6.3% auto 6.3% auto;
-  padding: 0 4.82% 0 4.82%;
 }
 .clearfix::after {
   content: "";
