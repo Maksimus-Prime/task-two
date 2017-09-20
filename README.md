@@ -5,7 +5,7 @@ Great CV for someone with a little experience
 ```
 git clone https://github.com/Maksimus-Prime/task-two-cv.git
 ```
-2. Install dependencies
+2. Install dependencies using [npm](https://www.npmjs.com/) (I use [Node.js](https://nodejs.org) v6.10.2)
 ```
 npm install
 ```
