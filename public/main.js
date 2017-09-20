@@ -189,15 +189,15 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./block-header/block-header.js": 19,
-		"./contact-item/contact-item.js": 21,
-		"./developer-card/developer-card.js": 23,
-		"./developer-contact/developer-contact.js": 26,
-		"./developer-education/developer-education.js": 28,
-		"./developer-experience/developer-experience.js": 30,
-		"./developer-profile/developer-profile.js": 32,
-		"./developer-skills/developer-skills.js": 34,
-		"./developer-software/developer-software.js": 36,
+		"./contact-item/contact-item.js": 19,
+		"./developer-card/developer-card.js": 21,
+		"./developer-contact/developer-contact.js": 24,
+		"./developer-education/developer-education.js": 26,
+		"./developer-experience/developer-experience.js": 28,
+		"./developer-profile/developer-profile.js": 30,
+		"./developer-skills/developer-skills.js": 32,
+		"./developer-software/developer-software.js": 34,
+		"./header/header.js": 36,
 		"./list-item/list-item.js": 38,
 		"./skills-item/skills-item.js": 40,
 		"./software-item/software-item.js": 42
@@ -237,6 +237,7 @@
 	"use strict";
 
 	__webpack_require__(22);
+	__webpack_require__(23);
 
 /***/ }),
 /* 22 */
@@ -248,22 +249,21 @@
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	__webpack_require__(24);
-	__webpack_require__(25);
+	module.exports = __webpack_require__.p + "img/avatar.jpg";
 
 /***/ }),
 /* 24 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	"use strict";
+
+	__webpack_require__(25);
 
 /***/ }),
 /* 25 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-	module.exports = __webpack_require__.p + "img/avatar.jpg";
+	// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 26 */

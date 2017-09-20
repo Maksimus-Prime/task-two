@@ -453,7 +453,7 @@ html {
 .left-column > section[class^="developer"] {
   margin-bottom: 15.5%;
 }
-.left-column > section[class^="developer"] > .block-header {
+.left-column > section[class^="developer"] > .header {
   margin-bottom: 3.3%;
 }
 .left-column > section[class^="developer"]:last-child {
@@ -493,7 +493,7 @@ html {
 .right-column > section[class^="developer"] {
   margin-bottom: 10.1%;
 }
-.right-column > section[class^="developer"] > .block-header {
+.right-column > section[class^="developer"] > .header {
   margin-bottom: 3.3%;
 }
 .right-column > section[class^="developer"]:last-child {
@@ -531,51 +531,6 @@ html {
   .right-column > section[class^="developer"]:last-child {
     margin-bottom: 0;
   }
-}
-.block-header {
-  display: inline-block;
-  width: 100%;
-}
-.block-header__title {
-  position: relative;
-  vertical-align: middle;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  letter-spacing: -0.1875rem;
-  color: #3d6cb0;
-  line-height: 4.65rem;
-  text-transform: uppercase;
-  z-index: 1;
-}
-.block-header__title::after {
-  content: "";
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  display: inline-block;
-  vertical-align: middle;
-  border-top: 0.3rem solid #3d6cb0;
-}
-.block-header__title::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 4.65rem;
-  height: 4.65rem;
-  background-color: #fff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-.block-header__title span {
-  background-color: #fff;
-  padding-right: 2%;
-  padding-left: 3%;
-  font-size: 2.65rem;
-  vertical-align: middle;
 }
 .contact-item {
   font-size: 1.33em;
@@ -640,13 +595,13 @@ html {
   font-size: 1.62rem;
   font-weight: bold;
 }
-.developer-contact .block-header__title::before {
+.developer-contact .header__title::before {
   background-image: url(img/contact-icon.png);
 }
 .developer-education {
   padding-top: 10px;
 }
-.developer-education .block-header__title::before {
+.developer-education .header__title::before {
   background-image: url(img/education-icon.png);
 }
 .developer-education .list-item {
@@ -655,7 +610,7 @@ html {
 .developer-education .list-item:last-child {
   margin-bottom: 0;
 }
-.developer-experience .block-header__title::before {
+.developer-experience .header__title::before {
   background-image: url(img/experience-icon.png);
 }
 .developer-experience .list-item {
@@ -667,7 +622,7 @@ html {
 .developer-experience .list-item:last-child {
   margin-bottom: 0;
 }
-.developer-profile .block-header__title::before {
+.developer-profile .header__title::before {
   background-image: url(img/profile-icon.png);
 }
 .developer-profile__description {
@@ -676,13 +631,13 @@ html {
   font-size: 1rem;
   line-height: 1.11rem;
 }
-.developer-skills .block-header__title::before {
+.developer-skills .header__title::before {
   background-image: url(img/skills-icon.png);
 }
 .developer-skills .skills-item {
   margin-bottom: 4.2%;
 }
-.developer-software .block-header__title::before {
+.developer-software .header__title::before {
   background-image: url(img/software-icon.png);
 }
 .developer-software__left-column {
@@ -711,6 +666,51 @@ html {
   .developer-software .software-item:last-child {
     margin-bottom: 9%;
   }
+}
+.header {
+  display: inline-block;
+  width: 100%;
+}
+.header__title {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  letter-spacing: -0.1875rem;
+  color: #3d6cb0;
+  line-height: 4.65rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.header__title::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 0.3rem solid #3d6cb0;
+}
+.header__title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.65rem;
+  height: 4.65rem;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.header__title span {
+  background-color: #fff;
+  padding-right: 2%;
+  padding-left: 3%;
+  font-size: 2.65rem;
+  vertical-align: middle;
 }
 .list-item {
   padding-left: 8%;
