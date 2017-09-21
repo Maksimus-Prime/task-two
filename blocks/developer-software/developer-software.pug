@@ -1,8 +1,8 @@
-mixin developer-software(blockname, list)
+mixin developer-software(blockname, blocktheme, list)
     include ../header/header.pug
     include ../software-item/software-item.pug
     section.developer-software.clearfix
-        +header(blockname)
+        +header(blockname, blocktheme)
         .developer-software__left-column
             each item in list.software.left
                 +software-item(item.name, item.value)

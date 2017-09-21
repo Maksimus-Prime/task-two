@@ -1,7 +1,7 @@
-mixin developer-skills(blockname, list)
+mixin developer-skills(blockname, blocktheme, list)
     include ../header/header.pug
     include ../skills-item/skills-item.pug
     section.developer-skills
-        +header(blockname)
+        +header(blockname, blocktheme)
         each skill in list.skills
             +skills-item(skill.name, skill.value)

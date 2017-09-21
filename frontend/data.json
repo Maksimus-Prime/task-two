@@ -24,18 +24,21 @@
     "education": {
         "item1": {
             "name": "Master Degree",
+            "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         "item2": {
             "name": "Master Degree",
+            "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         "item3": {
             "name": "Master Degree",
+            "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
@@ -44,18 +47,21 @@
     "experience": {
         "item1": {
             "name": "Master Degree",
+            "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         "item2": {
             "name": "Master Degree",
+            "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         "item3": {
             "name": "Master Degree",
+            "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         

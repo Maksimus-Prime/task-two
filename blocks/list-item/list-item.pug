@@ -1,6 +1,7 @@
-mixin list-item(title,date,subtitle,description)
+mixin list-item(title, titletheme, date, subtitle, description)
+    -var titletheme = (titletheme == "default")? "" : (titletheme == "experience")? ("list-item__title_theme_"+titletheme) : "";
     .list-item
-        h4.list-item__title=title
+        h4.list-item__title(class=titletheme)=title
             span=date
         span.list-item__subtitle=subtitle
         p.list-item__description=description

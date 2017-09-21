@@ -25,10 +25,10 @@ html
         main.layout.clearfix
             .left-column
                 +developer-card(data)
-                +developer-profile("Profile", data)
-                +developer-contact("Contact", data)
-                +developer-skills("Skills", data)
+                +developer-profile("Profile", "profile", data)
+                +developer-contact("Contact", "contact", data)
+                +developer-skills("Skills", "skills", data)
             .right-column
-                +developer-education("Education", data)
-                +developer-experience("Experience", data)
-                +developer-software("Software", data)
+                +developer-education("Education", "education", data)
+                +developer-experience("Experience", "experience", data)
+                +developer-software("Software", "software", data)
