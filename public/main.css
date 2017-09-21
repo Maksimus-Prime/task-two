@@ -440,6 +440,16 @@ html {
   max-width: 1236px;
   margin: 6.3% auto 6.3% auto;
 }
+@media screen and (max-width: 1250px) {
+  .layout {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .layout {
+    width: 100%;
+  }
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -461,7 +471,7 @@ html {
 }
 @media screen and (max-width: 860px) {
   .left-column {
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -475,15 +485,18 @@ html {
 }
 @media screen and (max-width: 450px) {
   .left-column {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 90%;
   }
   .left-column > section[class^="developer"] {
     margin-bottom: 15.5%;
   }
   .left-column > section[class^="developer"]:last-child {
     margin-bottom: 15.5%;
+  }
+}
+@media screen and (max-width: 368px) {
+  .left-column {
+    width: 97%;
   }
 }
 .right-column {
@@ -501,7 +514,7 @@ html {
 }
 @media screen and (max-width: 860px) {
   .right-column {
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -518,9 +531,7 @@ html {
 }
 @media screen and (max-width: 450px) {
   .right-column {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 90%;
   }
   .right-column > section[class^="developer"] {
     margin-bottom: 15.5%;
@@ -532,9 +543,14 @@ html {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 368px) {
+  .right-column {
+    width: 97%;
+  }
+}
 .contact-item {
   font-size: 1.33em;
-  padding: 4% 0;
+  padding: 1.0104rem 0;
 }
 .contact-item__name {
   float: left;
@@ -595,14 +611,8 @@ html {
   font-size: 1.62rem;
   font-weight: bold;
 }
-.developer-contact .header__title::before {
-  background-image: url(img/contact-icon.png);
-}
 .developer-education {
-  padding-top: 10px;
-}
-.developer-education .header__title::before {
-  background-image: url(img/education-icon.png);
+  padding-top: 1.8rem;
 }
 .developer-education .list-item {
   margin-bottom: 3%;
@@ -610,20 +620,11 @@ html {
 .developer-education .list-item:last-child {
   margin-bottom: 0;
 }
-.developer-experience .header__title::before {
-  background-image: url(img/experience-icon.png);
-}
 .developer-experience .list-item {
   margin-bottom: 3%;
 }
-.developer-experience .list-item__title {
-  color: #000;
-}
 .developer-experience .list-item:last-child {
   margin-bottom: 0;
-}
-.developer-profile .header__title::before {
-  background-image: url(img/profile-icon.png);
 }
 .developer-profile__description {
   margin: 0;
@@ -631,14 +632,8 @@ html {
   font-size: 1rem;
   line-height: 1.11rem;
 }
-.developer-skills .header__title::before {
-  background-image: url(img/skills-icon.png);
-}
 .developer-skills .skills-item {
   margin-bottom: 4.2%;
-}
-.developer-software .header__title::before {
-  background-image: url(img/software-icon.png);
 }
 .developer-software__left-column {
   width: 44.5%;
@@ -712,6 +707,24 @@ html {
   font-size: 2.65rem;
   vertical-align: middle;
 }
+.header__title_icon_profile::before {
+  background-image: url(img/profile-icon.png);
+}
+.header__title_icon_contact::before {
+  background-image: url(img/contact-icon.png);
+}
+.header__title_icon_skills::before {
+  background-image: url(img/skills-icon.png);
+}
+.header__title_icon_education::before {
+  background-image: url(img/education-icon.png);
+}
+.header__title_icon_experience::before {
+  background-image: url(img/experience-icon.png);
+}
+.header__title_icon_software::before {
+  background-image: url(img/software-icon.png);
+}
 .list-item {
   padding-left: 8%;
   position: relative;
@@ -743,6 +756,9 @@ html {
   text-transform: none;
   color: #000;
 }
+.list-item__title_theme_experience {
+  color: #000;
+}
 .list-item__subtitle {
   display: inline-block;
   width: 100%;
@@ -763,7 +779,7 @@ html {
   font-weight: normal;
   font-size: 1.66rem;
   text-transform: uppercase;
-  padding-bottom: 7px;
+  padding-bottom: 0.3888rem;
   word-wrap: break-word;
 }
 .skills-item__rating {

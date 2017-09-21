@@ -24,6 +24,12 @@ html {
     width: 100%;
     max-width: 1236px;
     margin: 6.3% auto 6.3% auto;
+    @media screen and (max-width: 1250px) {
+        width: 95%;
+    }
+    @media screen and (max-width: 860px) {
+        width: 100%;
+    }
 }
 .clearfix::after{
     content: "";
@@ -45,7 +51,7 @@ html {
         }
     }
     @media screen and (max-width: 860px) {
-        width: 75%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -57,15 +63,16 @@ html {
         }
     }
     @media screen and (max-width: 450px) {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%;
         & > section[class^="developer"] {
             margin-bottom: 15.5%;
             &:last-child {
                 margin-bottom: 15.5%;
             }
         }
+    }
+    @media screen and (max-width: 368px) {
+        width: 97%;
     }
 }
 .right-column {
@@ -81,7 +88,7 @@ html {
         }
     }
     @media screen and (max-width: 860px) {
-        width: 75%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -98,9 +105,7 @@ html {
         } 
     }
     @media screen and (max-width: 450px) {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%;
         & > section[class^="developer"] {
             margin-bottom: 15.5%;
             &:last-child {
@@ -112,5 +117,8 @@ html {
                 margin-bottom: 0;
             }
         }
+    }
+    @media screen and (max-width: 368px) {
+        width: 97%;
     }
 }

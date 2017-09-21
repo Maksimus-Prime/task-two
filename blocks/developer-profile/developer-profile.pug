@@ -1,6 +1,6 @@
-mixin developer-profile(blockname, list)
+mixin developer-profile(blockname, blocktheme, list)
     include ../header/header.pug
     section.developer-profile
-        +header(blockname)
+        +header(blockname, blocktheme)
         p.developer-profile__description=list.profile.text
             b=list.profile.majortext

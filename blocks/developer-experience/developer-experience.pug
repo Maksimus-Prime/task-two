@@ -1,7 +1,7 @@
-mixin developer-experience(blockname, list)
+mixin developer-experience(blockname, blocktheme, list)
     include ../header/header.pug
     include ../list-item/list-item.pug
     section.developer-experience
-        +header(blockname)
+        +header(blockname, blocktheme)
         each item in list.experience
-            +list-item(item.name, item.date, item.subtitle, item.description)
+            +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)
