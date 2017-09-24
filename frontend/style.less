@@ -1,4 +1,5 @@
 @import "../node_modules/normalize-css/normalize.css";
+@import (reference) "clearfix.less";
 html {
     font-size: 17px;
     background-color: #fff;
@@ -21,6 +22,7 @@ html {
     }
 }
 .layout {
+    &:extend(.clearfix all);
     width: 100%;
     max-width: 1236px;
     margin: 6.3% auto 6.3% auto;
@@ -30,95 +32,76 @@ html {
     @media screen and (max-width: 860px) {
         width: 100%;
     }
-}
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.left-column {
-    width: 36.8%;
-    margin-right: 6.79%;
-    float: left;
-    & > section[class^="developer"] {
-        margin-bottom: 15.5%;
-        & > .header {
-            margin-bottom: 3.3%;
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    @media screen and (max-width: 860px) {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        & > section[class^="developer"] {
-            margin-bottom: 10.3%;
-            &:last-child {
-                margin-bottom: 10.3%;
-            }
-        }
-    }
-    @media screen and (max-width: 450px) {
-        width: 90%;
-        & > section[class^="developer"] {
+    &-left-column {
+        width: 36.8%;
+        margin-right: 6.79%;
+        float: left;
+        &__item {
             margin-bottom: 15.5%;
-            &:last-child {
-                margin-bottom: 15.5%;
-            }
-        }
-    }
-    @media screen and (max-width: 368px) {
-        width: 97%;
-    }
-}
-.right-column {
-    width: 56.4%;
-    float: right;   
-    & > section[class^="developer"] {
-        margin-bottom: 10.1%;
-        & > .header {
-            margin-bottom: 3.3%;
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    @media screen and (max-width: 860px) {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        & > section[class^="developer"] {
-            margin-bottom: 10.3%;
-            &:last-child {
-                margin-bottom: 10.3%;
-            }
-        }
-        & > section[class^="developer"] {
-            &:last-child {
-                margin-bottom: 0;
-            }
-        } 
-    }
-    @media screen and (max-width: 450px) {
-        width: 90%;
-        & > section[class^="developer"] {
-            margin-bottom: 15.5%;
-            &:last-child {
-                margin-bottom: 15.5%;
-            }
-        }
-        & > section[class^="developer"] {
             &:last-child {
                 margin-bottom: 0;
             }
         }
+        @media screen and (max-width: 860px) {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            &__item {
+                margin-bottom: 10.3%;
+                &:last-child {
+                    margin-bottom: 10.3%;
+                }
+            }
+        }
+        @media screen and (max-width: 450px) {
+            width: 90%;
+            &__item {
+                margin-bottom: 15.5%;
+                &:last-child {
+                    margin-bottom: 15.5%;
+                }
+            }
+        }
+        @media screen and (max-width: 368px) {
+            width: 97%;
+        }
     }
-    @media screen and (max-width: 368px) {
-        width: 97%;
+    &-right-column {
+        width: 56.4%;
+        float: right;
+        &__item {
+            margin-bottom: 10.1%;
+            &:first-child {
+                padding-top: 1.8rem;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: 860px) {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            &__item {
+                margin-bottom: 10.3%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @media screen and (max-width: 450px) {
+            width: 90%;
+            &__item {
+                margin-bottom: 15.5%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @media screen and (max-width: 368px) {
+            width: 97%;
+        }
     }
 }

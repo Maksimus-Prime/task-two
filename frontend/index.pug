@@ -22,13 +22,20 @@ html
         include ../blocks/developer-experience/developer-experience.pug
         include ../blocks/developer-software/developer-software.pug
         -var data = require('./data.json')
-        main.layout.clearfix
-            .left-column
-                +developer-card(data)
-                +developer-profile("Profile", "profile", data)
-                +developer-contact("Contact", "contact", data)
-                +developer-skills("Skills", "skills", data)
-            .right-column
-                +developer-education("Education", "education", data)
-                +developer-experience("Experience", "experience", data)
-                +developer-software("Software", "software", data)
+        main.layout
+            .layout-left-column
+                .layout-left-column__item
+                    +developer-card(data)
+                .layout-left-column__item
+                    +developer-profile("Profile", "profile", data)
+                .layout-left-column__item
+                    +developer-contact("Contact", "contact", data)
+                .layout-left-column__item
+                    +developer-skills("Skills", "skills", data)
+            .layout-right-column
+                .layout-right-column__item
+                    +developer-education("Education", "education", data)
+                .layout-right-column__item
+                    +developer-experience("Experience", "experience", data)
+                .layout-right-column__item
+                    +developer-software("Software", "software", data)

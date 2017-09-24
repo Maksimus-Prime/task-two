@@ -1,11 +1,14 @@
-mixin developer-software(blockname, blocktheme, list)
+mixin developer-software(headername, headertheme, list)
     include ../header/header.pug
     include ../software-item/software-item.pug
-    section.developer-software.clearfix
-        +header(blockname, blocktheme)
+    section.developer-software
+        .developer-software__header
+            +header(headername, headertheme)
         .developer-software__left-column
             each item in list.software.left
-                +software-item(item.name, item.value)
+                .developer-software__item
+                    +software-item(item.name, item.value)
         .developer-software__right-column
             each item1 in list.software.right
-                +software-item(item1.name, item1.value)
+                .developer-software__item
+                    +software-item(item1.name, item1.value)

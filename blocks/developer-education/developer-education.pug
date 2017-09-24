@@ -2,6 +2,8 @@ mixin developer-education(blockname, blocktheme, list)
     include ../header/header.pug
     include ../list-item/list-item.pug
     section.developer-education
-        +header(blockname, blocktheme)
+        .developer-education__header
+            +header(blockname, blocktheme)
         each item in list.education
-            +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)
+            .developer-education__item
+                +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)

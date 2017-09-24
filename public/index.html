@@ -15,187 +15,253 @@
     <meta name="theme-color" content="#ffffff">
   <link href="main.css" rel="stylesheet"></head>
   <body>
-    <main class="layout clearfix">
-      <div class="left-column">
-            <section class="developer-card">
-              <div class="developer-card__photo"><img src="img/avatar.jpg" alt="developer's avatar"></div>
-              <div class="developer-card__name">Name here</div>
-              <div class="developer-card__surname">Surname</div>
-              <div class="developer-card__job">Graphic Designer</div>
-            </section>
-            <section class="developer-profile">
-                  <header class="header">
-                    <h3 class="header__title header__title_icon_profile"><span>Profile</span></h3>
-                  </header>
-              <p class="developer-profile__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu<b>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</b></p>
-            </section>
-            <section class="developer-contact">
-                    <header class="header">
-                      <h3 class="header__title header__title_icon_contact"><span>Contact</span></h3>
-                    </header>
-                    <div class="contact-item clearfix">
-                      <div class="contact-item__name">ADDRESS</div>
-                      <div class="contact-item__value"><a href="/mock-address/change-me">Main Street, City</a>
-                      </div>
-                    </div>
-                    <div class="contact-item clearfix">
-                      <div class="contact-item__name">E-MAIL</div>
-                      <div class="contact-item__value"><a href="mailto: contact@domain.com">contact@domain.com</a>
-                      </div>
-                    </div>
-                    <div class="contact-item clearfix">
-                      <div class="contact-item__name">PHONE</div>
-                      <div class="contact-item__value"><a href="tel: +555-555-555">555-555-555</a>
-                      </div>
-                    </div>
-                    <div class="contact-item clearfix">
-                      <div class="contact-item__name">WEBSITE</div>
-                      <div class="contact-item__value"><a href="www.yourweb.com" target="_blank" rel="noopener noreferrer">www.yourweb.com</a>
-                      </div>
-                    </div>
-            </section>
-            <section class="developer-skills">
-                  <header class="header">
-                    <h3 class="header__title header__title_icon_skills"><span>Skills</span></h3>
-                  </header>
-                  <div class="skills-item">
-                    <h4 class="skills-item__title">Creative</h4>
-                    <ul class="skills-item__rating">
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="skills-item">
-                    <h4 class="skills-item__title">Teamwork</h4>
-                    <ul class="skills-item__rating">
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="skills-item">
-                    <h4 class="skills-item__title">Innovate</h4>
-                    <ul class="skills-item__rating">
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="skills-item">
-                    <h4 class="skills-item__title">Communication</h4>
-                    <ul class="skills-item__rating">
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li class="active"></li>
-                      <li></li>
-                    </ul>
-                  </div>
-            </section>
+    <main class="layout">
+      <div class="layout-left-column">
+        <div class="layout-left-column__item">
+              <section class="developer-card">
+                <div class="developer-card__photo"><img class="developer-card__image" src="img/avatar.jpg" alt="developer's avatar"></div>
+                <div class="developer-card__name">Name here</div>
+                <div class="developer-card__surname">Surname</div>
+                <div class="developer-card__job">Graphic Designer</div>
+              </section>
+        </div>
+        <div class="layout-left-column__item">
+              <section class="developer-profile">
+                <div class="developer-profile__header">
+                      <header class="header">
+                        <h3 class="header__title header__title_icon_profile"><span class="header__outstanding-text">Profile</span></h3>
+                      </header>
+                </div>
+                <p class="developer-profile__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu<b>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</b></p>
+              </section>
+        </div>
+        <div class="layout-left-column__item">
+              <section class="developer-contact">
+                <div class="developer-contact__header">
+                        <header class="header">
+                          <h3 class="header__title header__title_icon_contact"><span class="header__outstanding-text">Contact</span></h3>
+                        </header>
+                </div>
+                <div class="developer-contact__item">
+                        <section class="contact-item">
+                          <div class="contact-item__name">ADDRESS</div>
+                          <div class="contact-item__value"><a class="contact-item__link" href="/mock-address/change-me">Main Street, City</a>
+                          </div>
+                        </section>
+                </div>
+                <div class="developer-contact__item">
+                        <section class="contact-item">
+                          <div class="contact-item__name">E-MAIL</div>
+                          <div class="contact-item__value"><a class="contact-item__link" href="mailto: contact@domain.com">contact@domain.com</a>
+                          </div>
+                        </section>
+                </div>
+                <div class="developer-contact__item">
+                        <section class="contact-item">
+                          <div class="contact-item__name">PHONE</div>
+                          <div class="contact-item__value"><a class="contact-item__link" href="tel: +555-555-555">555-555-555</a>
+                          </div>
+                        </section>
+                </div>
+                <div class="developer-contact__item">
+                        <section class="contact-item">
+                          <div class="contact-item__name">WEBSITE</div>
+                          <div class="contact-item__value"><a class="contact-item__link" href="www.yourweb.com" target="_blank" rel="noopener noreferrer">www.yourweb.com</a>
+                          </div>
+                        </section>
+                </div>
+              </section>
+        </div>
+        <div class="layout-left-column__item">
+              <section class="developer-skills">
+                <div class="developer-skills__header">
+                      <header class="header">
+                        <h3 class="header__title header__title_icon_skills"><span class="header__outstanding-text">Skills</span></h3>
+                      </header>
+                </div>
+                <div class="developer-skills__item">
+                      <section class="skills-item">
+                        <h4 class="skills-item__title">Creative</h4>
+                        <ul class="skills-item__rating">
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                        </ul>
+                      </section>
+                </div>
+                <div class="developer-skills__item">
+                      <section class="skills-item">
+                        <h4 class="skills-item__title">Teamwork</h4>
+                        <ul class="skills-item__rating">
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark"></li>
+                        </ul>
+                      </section>
+                </div>
+                <div class="developer-skills__item">
+                      <section class="skills-item">
+                        <h4 class="skills-item__title">Innovate</h4>
+                        <ul class="skills-item__rating">
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                          <li class="skills-item__mark"></li>
+                        </ul>
+                      </section>
+                </div>
+                <div class="developer-skills__item">
+                      <section class="skills-item">
+                        <h4 class="skills-item__title">Communication</h4>
+                        <ul class="skills-item__rating">
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark skills-item__mark_active"></li>
+                          <li class="skills-item__mark"></li>
+                        </ul>
+                      </section>
+                </div>
+              </section>
+        </div>
       </div>
-      <div class="right-column">
-            <section class="developer-education">
-                  <header class="header">
-                    <h3 class="header__title header__title_icon_education"><span>Education</span></h3>
-                  </header>
-                  <div class="list-item">
-                    <h4 class="list-item__title">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+      <div class="layout-right-column">
+        <div class="layout-right-column__item">
+              <section class="developer-education">
+                <div class="developer-education__header">
+                      <header class="header">
+                        <h3 class="header__title header__title_icon_education"><span class="header__outstanding-text">Education</span></h3>
+                      </header>
+                </div>
+                <div class="developer-education__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+                <div class="developer-education__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+                <div class="developer-education__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+              </section>
+        </div>
+        <div class="layout-right-column__item">
+              <section class="developer-experience">
+                <div class="developer-experience__header">
+                      <header class="header">
+                        <h3 class="header__title header__title_icon_experience"><span class="header__outstanding-text">Experience</span></h3>
+                      </header>
+                </div>
+                <div class="developer-experience__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+                <div class="developer-experience__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+                <div class="developer-experience__item">
+                      <section class="list-item">
+                        <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span class="list-item__date">// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
+                        <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                      </section>
+                </div>
+              </section>
+        </div>
+        <div class="layout-right-column__item">
+              <section class="developer-software">
+                <div class="developer-software__header">
+                      <header class="header">
+                        <h3 class="header__title header__title_icon_software"><span class="header__outstanding-text">Software</span></h3>
+                      </header>
+                </div>
+                <div class="developer-software__left-column">
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">Photoshop</h3>
+                          <div class="software-item__value" style="width:90.1%;"></div>
+                        </section>
                   </div>
-                  <div class="list-item">
-                    <h4 class="list-item__title">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">ILLUSTRATOR</h3>
+                          <div class="software-item__value" style="width:70.5%;"></div>
+                        </section>
                   </div>
-                  <div class="list-item">
-                    <h4 class="list-item__title">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">INDESIGN</h3>
+                          <div class="software-item__value" style="width:56%;"></div>
+                        </section>
                   </div>
-            </section>
-            <section class="developer-experience">
-                  <header class="header">
-                    <h3 class="header__title header__title_icon_experience"><span>Experience</span></h3>
-                  </header>
-                  <div class="list-item">
-                    <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                </div>
+                <div class="developer-software__right-column">
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">DREAMWEAVER</h3>
+                          <div class="software-item__value" style="width:82.6%;"></div>
+                        </section>
                   </div>
-                  <div class="list-item">
-                    <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">AFTER EFFECTS</h3>
+                          <div class="software-item__value" style="width:61.6%;"></div>
+                        </section>
                   </div>
-                  <div class="list-item">
-                    <h4 class="list-item__title list-item__title_theme_experience">Master Degree<span>// Feb 2011 - Jun 2014</span></h4><span class="list-item__subtitle">UNIVERSITY NAME</span>
-                    <p class="list-item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'</p>
+                  <div class="developer-software__item">
+                        <section class="software-item">
+                          <h3 class="software-item__title">HTML&amp;CSS3</h3>
+                          <div class="software-item__value" style="width:90.5%;"></div>
+                        </section>
                   </div>
-            </section>
-            <section class="developer-software clearfix">
-                  <header class="header">
-                    <h3 class="header__title header__title_icon_software"><span>Software</span></h3>
-                  </header>
-              <div class="developer-software__left-column">
-                    <div class="software-item">
-                      <h3 class="software-item__title">Photoshop</h3>
-                      <div class="software-item__value" style="width:90.1%;"></div>
-                    </div>
-                    <div class="software-item">
-                      <h3 class="software-item__title">ILLUSTRATOR</h3>
-                      <div class="software-item__value" style="width:70.5%;"></div>
-                    </div>
-                    <div class="software-item">
-                      <h3 class="software-item__title">INDESIGN</h3>
-                      <div class="software-item__value" style="width:56%;"></div>
-                    </div>
-              </div>
-              <div class="developer-software__right-column">
-                    <div class="software-item">
-                      <h3 class="software-item__title">DREAMWEAVER</h3>
-                      <div class="software-item__value" style="width:82.6%;"></div>
-                    </div>
-                    <div class="software-item">
-                      <h3 class="software-item__title">AFTER EFFECTS</h3>
-                      <div class="software-item__value" style="width:61.6%;"></div>
-                    </div>
-                    <div class="software-item">
-                      <h3 class="software-item__title">HTML&amp;CSS3</h3>
-                      <div class="software-item__value" style="width:90.5%;"></div>
-                    </div>
-              </div>
-            </section>
+                </div>
+              </section>
+        </div>
       </div>
     </main>
   <script type="text/javascript" src="main.js"></script></body>

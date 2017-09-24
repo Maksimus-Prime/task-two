@@ -2,6 +2,8 @@ mixin developer-experience(blockname, blocktheme, list)
     include ../header/header.pug
     include ../list-item/list-item.pug
     section.developer-experience
-        +header(blockname, blocktheme)
+        .developer-experience__header
+            +header(blockname, blocktheme)
         each item in list.experience
-            +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)
+            .developer-experience__item
+                +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)

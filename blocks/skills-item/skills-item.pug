@@ -1,10 +1,10 @@
 mixin skills-item(title,value)
-    .skills-item
+    section.skills-item
         h4.skills-item__title=title
         ul.skills-item__rating
             -for (var x = 0; x < value; x++) {
-                li.active
+                li.skills-item__mark.skills-item__mark_active
             -}
             -for (var x = value; x < 12; x++) {
-                li
+                li.skills-item__mark
             -}

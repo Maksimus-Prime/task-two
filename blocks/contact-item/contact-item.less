@@ -1,6 +1,6 @@
-.contact-item {
+.contact-item{
+    &:extend(.clearfix all);
     font-size: 1.33em;
-    padding: 1.0104rem 0;
     &__name {
         float: left;
         width: 31%;
@@ -9,26 +9,21 @@
         font-weight: bold;
         color: #3d6cb0;
     }
-    &:last-child {
-        padding-bottom: 0;
-    }
-    &__value {
-        & a {
-            text-decoration: none;
+    &__link {
+        text-decoration: none;
+        color: #000;
+        word-wrap: break-word;
+        &:link {
             color: #000;
-            word-wrap: break-word;
-            &:link {
-                color: #000;
-            }
-            &:visited {
-                color: #7E0027;
-            }
-            &:hover {
-                color: #2D587B;
-            }
-            &:active {
-                color: #184169;
-            }
         }
+        &:visited {
+            color: #7E0027;
+        }
+        &:hover {
+            color: #2D587B;
+        }
+        &:active {
+            color: #184169;
+        }        
     }
 }
