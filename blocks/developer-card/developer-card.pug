@@ -1,7 +1,7 @@
-mixin developer-card(list)
+mixin developer-card(data)
     section.developer-card
         .developer-card__photo
-            img(src=""+list.card.image+"" alt="developer's avatar")
-        .developer-card__name=list.card.name
-        .developer-card__surname=list.card.surname
-        .developer-card__job=list.card.job
+            img.developer-card__image(src=""+data.card.image+"" alt="developer's avatar")
+        .developer-card__name=data.card.name
+        .developer-card__surname=data.card.surname
+        .developer-card__job=data.card.job

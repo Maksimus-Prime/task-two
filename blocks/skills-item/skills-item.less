@@ -14,21 +14,21 @@
         display: inline-block;
         margin: 0;
         padding: 0;
-        & li {
-            position: relative;
-            display: inline-block;
-            width: 1.12rem;
-            height: 1.12rem;
-            margin-right: 1.5%;
-            border-radius: 50%;
-            list-style: none;
-            background-color: #e6e6e6;
-            &.active {
-                background-color: #3d6cb0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
+    }
+    &__mark {
+        position: relative;
+        display: inline-block;
+        width: 1.12rem;
+        height: 1.12rem;
+        margin-right: 1.5%;
+        border-radius: 50%;
+        list-style: none;
+        background-color: #e6e6e6;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_active {
+           background-color: #3d6cb0; 
         }
     }
 }

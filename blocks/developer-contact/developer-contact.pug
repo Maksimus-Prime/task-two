@@ -2,6 +2,8 @@ mixin developer-contact(blockname, blocktheme, list)
     section.developer-contact
         include ../header/header.pug
         include ../contact-item/contact-item.pug
-        +header(blockname, blocktheme)
+        .developer-contact__header
+            +header(blockname, blocktheme)
         each contact in list.contacts
-           +contact-item(contact.name, contact.value, contact.type, contact.typevalue)
+            .developer-contact__item
+                +contact-item(contact.name, contact.value, contact.type, contact.typevalue)

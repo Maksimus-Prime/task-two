@@ -2,6 +2,8 @@ mixin developer-skills(blockname, blocktheme, list)
     include ../header/header.pug
     include ../skills-item/skills-item.pug
     section.developer-skills
-        +header(blockname, blocktheme)
+        .developer-skills__header
+            +header(blockname, blocktheme)
         each skill in list.skills
-            +skills-item(skill.name, skill.value)
+            .developer-skills__item
+                +skills-item(skill.name, skill.value)
