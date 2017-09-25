@@ -539,6 +539,11 @@ html {
     width: 97%;
   }
 }
+.contact-item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .contact-item {
   font-size: 1.33em;
 }
