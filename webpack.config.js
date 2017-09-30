@@ -1,7 +1,6 @@
 'use strict';
-
 const webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -38,6 +37,9 @@ module.exports = {
             test: /\.(jpe?g|png|svg|gif)$/,
             loader: "file-loader?name=img/[name].[ext]"
         }]
+    },
+    devServer: {
+        contentBase: __dirname + "/public/"
     },
     plugins: [
     new HtmlWebpackPlugin({

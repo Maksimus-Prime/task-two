@@ -9,4 +9,13 @@ git clone https://github.com/Maksimus-Prime/task-two-cv.git
 ```
 npm install
 ```
+## Run
+### Development
+```
+npm run dev
+```
+### Production
+```
+npm run prod
+```
 Look at the [result](https://maksimus-prime.github.io/task-two-cv/public/).

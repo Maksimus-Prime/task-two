@@ -19,11 +19,14 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^6.2.10",
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "npm i": "npm install"
+    "npm i": "npm install",
+    "prod": "webpack -p",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
