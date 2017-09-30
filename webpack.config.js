@@ -32,13 +32,15 @@ module.exports = {
             }
         }, {
             test: /\.(css|less)$/,
-            loader: ExtractTextPlugin.extract("style-loader","css-loader!autoprefixer-loader!less-loader")
+            loader: ExtractTextPlugin.extract("style-loader","css-loader!postcss-loader!less-loader")
         }, {
             test: /\.(jpe?g|png|svg|gif)$/,
             loader: "file-loader?name=img/[name].[ext]"
         }]
     },
     devServer: {
+        host: "localhost",
+        port: "3030",
         contentBase: __dirname + "/public/"
     },
     plugins: [
