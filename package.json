@@ -17,9 +17,11 @@
     "webpack": "^1.12.2"
   },
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.6.0",
+    "pug-loader": "^2.3.0",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
