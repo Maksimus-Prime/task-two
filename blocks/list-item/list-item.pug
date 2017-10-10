@@ -1,5 +1,5 @@
 mixin list-item(title, titletheme, date, subtitle, description)
-    -var titletheme = (titletheme == "default")? "" : (titletheme == "experience")? ("list-item__title_theme_"+titletheme) : "";
+    -var titletheme = (titletheme !== "default")? "list-item__title_theme_"+titletheme : "";
     section.list-item
         h4.list-item__title(class=titletheme)=title
             span.list-item__date=date

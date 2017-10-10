@@ -1,3 +1,11 @@
+include ../blocks/developer-card/developer-card.pug
+include ../blocks/developer-profile/developer-profile.pug
+include ../blocks/developer-contact/developer-contact.pug
+include ../blocks/developer-skills/developer-skills.pug
+include ../blocks/developer-education/developer-education.pug
+include ../blocks/developer-experience/developer-experience.pug
+include ../blocks/developer-software/developer-software.pug
+-var data = require('./data.json')
 doctype html
 html
     head
@@ -14,14 +22,6 @@ html
         link(rel="mask-icon", href="favicons/safari-pinned-tab.svg", color="#5bbad5")
         meta(name="theme-color", content="#ffffff")
     body
-        include ../blocks/developer-card/developer-card.pug
-        include ../blocks/developer-profile/developer-profile.pug
-        include ../blocks/developer-contact/developer-contact.pug
-        include ../blocks/developer-skills/developer-skills.pug
-        include ../blocks/developer-education/developer-education.pug
-        include ../blocks/developer-experience/developer-experience.pug
-        include ../blocks/developer-software/developer-software.pug
-        -var data = require('./data.json')
         main.layout
             .layout-left-column
                 .layout-left-column__item

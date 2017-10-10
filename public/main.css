@@ -1,1 +1,858 @@
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}.layout:after{content:"";display:table;clear:both}html{font-size:17px;background-color:#fff;color:#000;font-family:Arial,sans-serif}@media screen and (max-width:1920px){html{font-size:18px}}@media screen and (max-width:1324px){html{font-size:16px}}@media screen and (max-width:1024px){html{font-size:14px}}@media screen and (max-width:860px){html{font-size:14px}}@media screen and (max-width:450px){html{font-size:12px}}.layout{width:100%;max-width:1236px;margin:6.3% auto}@media screen and (max-width:1250px){.layout{width:95%}}@media screen and (max-width:860px){.layout{width:100%}}.layout-left-column{width:36.8%;margin-right:6.79%;float:left}.layout-left-column__item{margin-bottom:15.5%}.layout-left-column__item:last-child{margin-bottom:0}@media screen and (max-width:860px){.layout-left-column{width:85%;margin-left:auto;margin-right:auto;float:none}.layout-left-column__item,.layout-left-column__item:last-child{margin-bottom:10.3%}}@media screen and (max-width:450px){.layout-left-column{width:90%}.layout-left-column__item,.layout-left-column__item:last-child{margin-bottom:15.5%}}@media screen and (max-width:368px){.layout-left-column{width:97%}}.layout-right-column{width:56.4%;float:right}.layout-right-column__item{margin-bottom:10.1%}.layout-right-column__item:first-child{padding-top:1.8rem}.layout-right-column__item:last-child{margin-bottom:0}@media screen and (max-width:860px){.layout-right-column{width:85%;margin-left:auto;margin-right:auto;float:none}.layout-right-column__item{margin-bottom:10.3%}.layout-right-column__item:last-child{margin-bottom:0}}@media screen and (max-width:450px){.layout-right-column{width:90%}.layout-right-column__item{margin-bottom:15.5%}.layout-right-column__item:last-child{margin-bottom:0}}@media screen and (max-width:368px){.layout-right-column{width:97%}}.contact-item:after{content:"";display:table;clear:both}.contact-item{font-size:1.33em}.contact-item__name{float:left;width:31%;word-wrap:break-word;text-transform:uppercase;font-weight:700;color:#3d6cb0}.contact-item__link{text-decoration:none;color:#000;word-wrap:break-word}.contact-item__link:link{color:#000}.contact-item__link:visited{color:#7e0027}.contact-item__link:hover{color:#2d587b}.contact-item__link:active{color:#184169}.developer-card{padding-top:3%;padding-bottom:6.5%;text-transform:uppercase;text-align:center;letter-spacing:-.12rem;word-wrap:break-word}.developer-card_position_first{padding-top:1.8rem;margin-bottom:15.5%}.developer-card_position_item{margin-bottom:15.5%}.developer-card_position_last{margin-bottom:0}.developer-card__image{width:13rem;line-height:13rem;background-color:#3d6cb0;border:.962rem solid #fff;border-radius:50%;box-shadow:0 0 0 .0625rem #3d6cb0}.developer-card__name{padding-top:7.4%;font-size:3.38rem;line-height:3.38rem}.developer-card__surname{font-size:4rem;line-height:4rem;font-weight:700}.developer-card__job{padding-top:.9%;font-size:1.62rem;font-weight:700}.developer-contact__header{margin-bottom:3.3%}.developer-contact__item{padding:1.0104rem 0}.developer-contact__item:last-child{padding-bottom:0}.developer-education__header{margin-bottom:3.3%}.developer-education__item{margin-bottom:3%}.developer-education__item:last-child{margin-bottom:0}.developer-experience__header{margin-bottom:3.3%}.developer-experience__item{margin-bottom:3%}.developer-experience__item:last-child{margin-bottom:0}.developer-profile__header{margin-bottom:3.3%}.developer-profile__description{margin:0;padding:0;font-size:1rem;line-height:1.11rem}.developer-skills__header{margin-bottom:3.3%}.developer-skills__item{margin-bottom:4.2%}.developer-software:after{content:"";display:table;clear:both}.developer-software__header{margin-bottom:3.3%}.developer-software__left-column{width:44.5%;float:left;margin-right:11%}.developer-software__right-column{width:44.5%;float:left}.developer-software__item{margin-bottom:9%}.developer-software__item:last-child{margin-bottom:0}@media screen and (max-width:860px){.developer-software__left-column,.developer-software__right-column{width:80%;margin-left:auto;margin-right:auto;float:none}.developer-software__item:last-child{margin-bottom:9%}}.header{display:inline-block;width:100%}.header__title{position:relative;margin:0;letter-spacing:-.1875rem;color:#3d6cb0;line-height:4.65rem;text-transform:uppercase;z-index:1}.header__title,.header__title:after{vertical-align:middle;display:inline-block;width:100%}.header__title:after{content:"";position:absolute;top:45%;left:0;z-index:-1;border-top:.3rem solid #3d6cb0}.header__title:before{content:"";display:inline-block;vertical-align:middle;width:4.65rem;height:4.65rem;background-color:#fff;background-size:contain;background-repeat:no-repeat;z-index:1}.header__title_icon_profile:before{background-image:url(img/profile-icon.png)}.header__title_icon_contact:before{background-image:url(img/contact-icon.png)}.header__title_icon_skills:before{background-image:url(img/skills-icon.png)}.header__title_icon_education:before{background-image:url(img/education-icon.png)}.header__title_icon_experience:before{background-image:url(img/experience-icon.png)}.header__title_icon_software:before{background-image:url(img/software-icon.png)}.header__outstanding-text{background-color:#fff;padding-right:2%;padding-left:3%;font-size:2.65rem;vertical-align:middle}.list-item{padding-left:8%;position:relative}.list-item:before{content:"";position:absolute;width:1.3rem;height:1.3rem;top:2.5%;left:1.7%;background-color:#000;border-radius:50%}.list-item__subtitle,.list-item__title{margin:0;padding:0;font-size:1.6rem;text-transform:uppercase}.list-item__title{color:#3d6cb0;padding-bottom:.6%}.list-item__title_theme_experience{color:#000}.list-item__date{padding-left:2.8%;font-weight:400;text-transform:none;color:#000}.list-item__subtitle{display:inline-block;width:100%;padding-bottom:1.3%}.list-item__description{margin:0;padding:0;font-size:1rem;line-height:1.11rem}.skills-item{text-align:center}.skills-item__title{margin:0;padding:0;font-weight:400;font-size:1.66rem;text-transform:uppercase;padding-bottom:.3888rem;word-wrap:break-word}.skills-item__rating{width:100%;display:inline-block;margin:0;padding:0}.skills-item__mark{position:relative;display:inline-block;width:1.12rem;height:1.12rem;margin-right:1.5%;border-radius:50%;list-style:none;background-color:#e6e6e6}.skills-item__mark:last-child{margin-right:0}.skills-item__mark_active{background-color:#3d6cb0}.software-item{position:relative}.software-item__title{margin:0;padding:0;margin-bottom:4.9%;font-size:1.6rem;text-transform:uppercase;word-wrap:break-word;font-weight:400}.software-item__value{background-color:#3d6cb0;height:1.42rem}.software-item__value:after{content:"";position:absolute;width:100%;height:1.42rem;background-color:#e6e6e6;z-index:-1}
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.layout::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+html {
+  font-size: 17px;
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1324px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+.layout {
+  width: 100%;
+  max-width: 1236px;
+  margin: 6.3% auto 6.3% auto;
+}
+@media screen and (max-width: 1250px) {
+  .layout {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .layout {
+    width: 100%;
+  }
+}
+.layout-left-column {
+  width: 36.8%;
+  margin-right: 6.79%;
+  float: left;
+}
+.layout-left-column__item {
+  margin-bottom: 15.5%;
+}
+.layout-left-column__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 860px) {
+  .layout-left-column {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .layout-left-column__item {
+    margin-bottom: 10.3%;
+  }
+  .layout-left-column__item:last-child {
+    margin-bottom: 10.3%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .layout-left-column {
+    width: 90%;
+  }
+  .layout-left-column__item {
+    margin-bottom: 15.5%;
+  }
+  .layout-left-column__item:last-child {
+    margin-bottom: 15.5%;
+  }
+}
+@media screen and (max-width: 368px) {
+  .layout-left-column {
+    width: 97%;
+  }
+}
+.layout-right-column {
+  width: 56.4%;
+  float: right;
+}
+.layout-right-column__item {
+  margin-bottom: 10.1%;
+}
+.layout-right-column__item:first-child {
+  padding-top: 1.8rem;
+}
+.layout-right-column__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 860px) {
+  .layout-right-column {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .layout-right-column__item {
+    margin-bottom: 10.3%;
+  }
+  .layout-right-column__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .layout-right-column {
+    width: 90%;
+  }
+  .layout-right-column__item {
+    margin-bottom: 15.5%;
+  }
+  .layout-right-column__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 368px) {
+  .layout-right-column {
+    width: 97%;
+  }
+}
+.contact-item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-item {
+  font-size: 1.33em;
+}
+.contact-item__name {
+  float: left;
+  width: 31%;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3d6cb0;
+}
+.contact-item__link {
+  text-decoration: none;
+  color: #000;
+  word-wrap: break-word;
+}
+.contact-item__link:link {
+  color: #000;
+}
+.contact-item__link:visited {
+  color: #7E0027;
+}
+.contact-item__link:hover {
+  color: #2D587B;
+}
+.contact-item__link:active {
+  color: #184169;
+}
+.developer-card {
+  padding-top: 3%;
+  padding-bottom: 6.5%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.12rem;
+  word-wrap: break-word;
+}
+.developer-card_position_first {
+  padding-top: 1.8rem;
+  margin-bottom: 15.5%;
+}
+.developer-card_position_item {
+  margin-bottom: 15.5%;
+}
+.developer-card_position_last {
+  margin-bottom: 0;
+}
+.developer-card__image {
+  width: 13rem;
+  line-height: 13rem;
+  background-color: #3d6cb0;
+  border: 0.962rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.0625rem #3d6cb0;
+}
+.developer-card__name {
+  padding-top: 7.4%;
+  font-size: 3.38rem;
+  line-height: 3.38rem;
+}
+.developer-card__surname {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: bold;
+}
+.developer-card__job {
+  padding-top: 0.9%;
+  font-size: 1.62rem;
+  font-weight: bold;
+}
+.developer-contact__header {
+  margin-bottom: 3.3%;
+}
+.developer-contact__item {
+  padding: 1.0104rem 0;
+}
+.developer-contact__item:last-child {
+  padding-bottom: 0;
+}
+.developer-education__header {
+  margin-bottom: 3.3%;
+}
+.developer-education__item {
+  margin-bottom: 3%;
+}
+.developer-education__item:last-child {
+  margin-bottom: 0;
+}
+.developer-experience__header {
+  margin-bottom: 3.3%;
+}
+.developer-experience__item {
+  margin-bottom: 3%;
+}
+.developer-experience__item:last-child {
+  margin-bottom: 0;
+}
+.developer-profile__header {
+  margin-bottom: 3.3%;
+}
+.developer-profile__description {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.11rem;
+}
+.developer-skills__header {
+  margin-bottom: 3.3%;
+}
+.developer-skills__item {
+  margin-bottom: 4.2%;
+}
+.developer-software::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.developer-software__header {
+  margin-bottom: 3.3%;
+}
+.developer-software__left-column {
+  width: 44.5%;
+  float: left;
+  margin-right: 11%;
+}
+.developer-software__right-column {
+  width: 44.5%;
+  float: left;
+}
+.developer-software__item {
+  margin-bottom: 9%;
+}
+.developer-software__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 860px) {
+  .developer-software__left-column,
+  .developer-software__right-column {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .developer-software__item:last-child {
+    margin-bottom: 9%;
+  }
+}
+.header {
+  display: inline-block;
+  width: 100%;
+}
+.header__title {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  letter-spacing: -0.1875rem;
+  color: #3d6cb0;
+  line-height: 4.65rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.header__title::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 0.3rem solid #3d6cb0;
+}
+.header__title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.65rem;
+  height: 4.65rem;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.header__title_icon_profile::before {
+  background-image: url(img/profile-icon.png);
+}
+.header__title_icon_contact::before {
+  background-image: url(img/contact-icon.png);
+}
+.header__title_icon_skills::before {
+  background-image: url(img/skills-icon.png);
+}
+.header__title_icon_education::before {
+  background-image: url(img/education-icon.png);
+}
+.header__title_icon_experience::before {
+  background-image: url(img/experience-icon.png);
+}
+.header__title_icon_software::before {
+  background-image: url(img/software-icon.png);
+}
+.header__outstanding-text {
+  background-color: #fff;
+  padding-right: 2%;
+  padding-left: 3%;
+  font-size: 2.65rem;
+  vertical-align: middle;
+}
+.list-item {
+  padding-left: 8%;
+  position: relative;
+}
+.list-item::before {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  top: 2.5%;
+  left: 1.7%;
+  background-color: #000;
+  border-radius: 50%;
+}
+.list-item__title,
+.list-item__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.list-item__title {
+  color: #3d6cb0;
+  padding-bottom: 0.6%;
+}
+.list-item__title_theme_experience {
+  color: #000;
+}
+.list-item__date {
+  padding-left: 2.8%;
+  font-weight: normal;
+  text-transform: none;
+  color: #000;
+}
+.list-item__subtitle {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 1.3%;
+}
+.list-item__description {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.11rem;
+}
+.skills-item {
+  text-align: center;
+}
+.skills-item__title {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 1.66rem;
+  text-transform: uppercase;
+  padding-bottom: 0.3888rem;
+  word-wrap: break-word;
+}
+.skills-item__rating {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.skills-item__mark {
+  position: relative;
+  display: inline-block;
+  width: 1.12rem;
+  height: 1.12rem;
+  margin-right: 1.5%;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #e6e6e6;
+}
+.skills-item__mark:last-child {
+  margin-right: 0;
+}
+.skills-item__mark_active {
+  background-color: #3d6cb0;
+}
+.software-item {
+  position: relative;
+}
+.software-item__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4.9%;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-weight: normal;
+}
+.software-item__value {
+  background-color: #3d6cb0;
+  height: 1.42rem;
+}
+.software-item__value::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.42rem;
+  background-color: #e6e6e6;
+  z-index: -1;
+}

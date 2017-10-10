@@ -9,74 +9,74 @@
         "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu",
         "majortext": "pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
     },
-    "contacts": {
-        "item1": {"name": "ADDRESS", "value": "Main Street, City"},
-        "item2": {"name": "E-MAIL", "value": "contact@domain.com", "type": "mail", "typevalue": "contact@domain.com" },
-        "item3": {"name": "PHONE", "value": "555-555-555", "type": "tel", "typevalue": "+555-555-555" },
-        "item4": {"name": "WEBSITE", "value": "www.yourweb.com", "type": "site", "typevalue": "www.yourweb.com"}
-    },
-    "skills": {
-        "item1": {"name": "Creative", "value": "9"},
-        "item2": {"name": "Teamwork", "value": "11"},
-        "item3": {"name": "Innovate", "value": "6"},
-        "item4": {"name": "Communication", "value": "11"}
-    },
-    "education": {
-        "item1": {
+    "contacts": [
+        {"name": "ADDRESS", "value": "Main Street, City"},
+        {"name": "E-MAIL", "value": "contact@domain.com", "type": "mail", "typevalue": "contact@domain.com" },
+        {"name": "PHONE", "value": "555-555-555", "type": "phone", "typevalue": "+555-555-555" },
+        {"name": "WEBSITE", "value": "www.yourweb.com", "type": "site", "typevalue": "www.yourweb.com"}
+    ],
+    "skills": [
+        {"name": "Creative", "value": "9"},
+        {"name": "Teamwork", "value": "11"},
+        {"name": "Innovate", "value": "6"},
+        {"name": "Communication", "value": "11"}
+    ],
+    "education": [
+        {
             "name": "Master Degree",
             "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
-        "item2": {
+        {
             "name": "Master Degree",
             "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
-        "item3": {
+        {
             "name": "Master Degree",
             "titletheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         }
-    },
-    "experience": {
-        "item1": {
+    ],
+    "experience": [
+        {
             "name": "Master Degree",
             "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
-        "item2": {
+        {
             "name": "Master Degree",
             "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
-        "item3": {
+        {
             "name": "Master Degree",
             "titletheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         }
-    },
+    ],
     "software": {
-        "left": {
-            "item1": {"name": "Photoshop", "value": "90.1"},
-            "item2": {"name": "ILLUSTRATOR", "value": "70.5"},
-            "item3": {"name": "INDESIGN", "value": "56"}
-        },
-        "right": {
-            "item1": {"name": "DREAMWEAVER", "value": "82.6"},
-            "item2": {"name": "AFTER EFFECTS", "value": "61.6"},
-            "item3": {"name": "HTML&CSS3", "value": "90.5"}
-        }
+        "left": [
+            {"name": "Photoshop", "value": "90.1"},
+            {"name": "ILLUSTRATOR", "value": "70.5"},
+            {"name": "INDESIGN", "value": "56"}
+        ],
+        "right": [
+            {"name": "DREAMWEAVER", "value": "82.6"},
+            {"name": "AFTER EFFECTS", "value": "61.6"},
+            {"name": "HTML&CSS3", "value": "90.5"}
+        ]
     }
 }

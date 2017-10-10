@@ -2,11 +2,11 @@ mixin contact-item(name,namevalue,type,typevalue)
     section.contact-item
         .contact-item__name=name
         .contact-item__value
-            if type == "tel"
+            if type == "phone"
                 a.contact-item__link(href="tel: " + typevalue)=namevalue
             else if type == "mail"
                 a.contact-item__link(href="mailto: " + typevalue)=namevalue
             else if type == "site"
-                a.contact-item__link(href="" + typevalue + "" target="_blank" rel="noopener noreferrer")=namevalue
+                a.contact-item__link(href=typevalue target="_blank" rel="noopener noreferrer")=namevalue
             else
                 a.contact-item__link(href="/mock-address/change-me")=namevalue
