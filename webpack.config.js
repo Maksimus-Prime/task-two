@@ -35,7 +35,8 @@ module.exports = {
             loader: ExtractTextPlugin.extract("style-loader","css-loader!postcss-loader!less-loader")
         }, {
             test: /\.(jpe?g|png|svg|gif)$/,
-            loader: "file-loader?name=img/[name].[ext]"
+            loader: "file-loader?name=img/[name].[ext]",
+            exclude: ["favicons"]
         }]
     },
     devServer: {

@@ -1,1 +1,0 @@
-require("./developer-profile.less");

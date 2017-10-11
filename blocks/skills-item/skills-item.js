@@ -1,1 +1,0 @@
-require("./skills-item.less");
