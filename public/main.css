@@ -728,9 +728,9 @@ html {
 }
 .header::before {
   content: "";
+  display: inline-block;
   width: 4.65rem;
   height: 4.65rem;
-  background-image: url(img/education-icon.png);
   background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
@@ -755,6 +755,7 @@ html {
 }
 .header:after {
   content: "";
+  display: inline-block;
   height: 0.3rem;
   background: #3d6cb0;
   -webkit-box-flex: 1;
