@@ -691,67 +691,75 @@ html {
   }
 }
 .header {
-  display: inline-block;
+  height: 5.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  text-align: center;
+  word-wrap: break-word;
 }
 .header__title {
-  position: relative;
-  vertical-align: middle;
-  display: inline-block;
-  width: 100%;
+  padding-right: 0.8125rem;
+  padding-left: 1.25rem;
   margin: 0;
+  height: 5.375rem;
+  background: #fff;
   letter-spacing: -0.1875rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 2.65rem;
   color: #3d6cb0;
-  line-height: 4.65rem;
   text-transform: uppercase;
-  z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-wrap: break-word;
 }
-.header__title::after {
+.header::before {
   content: "";
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  display: inline-block;
-  vertical-align: middle;
-  border-top: 0.3rem solid #3d6cb0;
-}
-.header__title::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
   width: 4.65rem;
   height: 4.65rem;
+  background-image: url(img/education-icon.png);
   background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 1;
 }
-.header__title_icon_profile::before {
+.header_icon_profile::before {
   background-image: url(img/profile-icon.png);
 }
-.header__title_icon_contact::before {
+.header_icon_contact::before {
   background-image: url(img/contact-icon.png);
 }
-.header__title_icon_skills::before {
+.header_icon_skills::before {
   background-image: url(img/skills-icon.png);
 }
-.header__title_icon_education::before {
+.header_icon_education::before {
   background-image: url(img/education-icon.png);
 }
-.header__title_icon_experience::before {
+.header_icon_experience::before {
   background-image: url(img/experience-icon.png);
 }
-.header__title_icon_software::before {
+.header_icon_software::before {
   background-image: url(img/software-icon.png);
 }
-.header__outstanding-text {
-  background-color: #fff;
-  padding-right: 2%;
-  padding-left: 3%;
-  font-size: 2.65rem;
-  vertical-align: middle;
+.header:after {
+  content: "";
+  height: 0.3rem;
+  background: #3d6cb0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .list-item {
   padding-left: 8%;

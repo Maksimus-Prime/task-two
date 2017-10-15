@@ -1,75 +1,69 @@
 .header {
-    display: inline-block;
+    height: 5.375rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     width: 100%;
+    text-align: center;
+    word-wrap: break-word;
     &__title {
-        position: relative;
-        vertical-align: middle;
-        display: inline-block;
-        width: 100%;
+        padding-right: 0.8125rem;
+        padding-left: 1.25rem;
         margin: 0;
+        height: 5.375rem;
+        background: #fff;
         letter-spacing: -0.1875rem;
+        display: inline-flex;
+        font-size: 2.65rem;
         color: #3d6cb0;
-        line-height: 4.65rem;
         text-transform: uppercase;
-        z-index: 1;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 45%;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-            display: inline-block;
-            vertical-align: middle;
-            border-top: 0.3rem solid #3d6cb0;
-        }
+        justify-content:center;
+        align-items:center;
+        word-wrap: break-word;
+    }
+    &::before {
+        content: "";
+        width: 4.65rem;
+        height: 4.65rem;
+        background-image: url(img/education-icon.png);
+        background-color: #fff;
+        background-size: contain;
+        background-repeat: no-repeat;     
+    }
+    &_icon_profile {
         &::before {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 4.65rem;
-            height: 4.65rem;
-            background-color: #fff;
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: 1;
-        }
-        &_icon_profile {
-            &::before {
-                background-image: url(img/profile-icon.png);
-            }
-        }
-        &_icon_contact {
-            &::before {
-                background-image: url(img/contact-icon.png);
-            }
-        }
-        &_icon_skills {
-            &::before {
-                background-image: url(img/skills-icon.png);
-            }            
-        }
-        &_icon_education {
-            &::before {
-                background-image: url(img/education-icon.png);
-            }
-        }
-        &_icon_experience {
-            &::before {
-                background-image: url(img/experience-icon.png);
-            }
-        }
-        &_icon_software {
-            &::before {
-                background-image: url(img/software-icon.png);
-            }
+            background-image: url(img/profile-icon.png);
         }
     }
-    &__outstanding-text {
-        background-color: #fff;
-        padding-right: 2%;
-        padding-left: 3%;
-        font-size: 2.65rem;
-        vertical-align: middle;
+    &_icon_contact {
+        &::before {
+            background-image: url(img/contact-icon.png);
+        }
+    }
+    &_icon_skills {
+        &::before {
+            background-image: url(img/skills-icon.png);
+        }            
+    }
+    &_icon_education {
+        &::before {
+            background-image: url(img/education-icon.png);
+        }
+    }
+    &_icon_experience {
+        &::before {
+            background-image: url(img/experience-icon.png);
+        }
+    }
+    &_icon_software {
+        &::before {
+            background-image: url(img/software-icon.png);
+        }
+    }
+    &:after {
+        content: "";
+        height: 0.3rem;
+        background: #3d6cb0;
+        flex:1;
     }
 }
