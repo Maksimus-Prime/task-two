@@ -62,7 +62,7 @@
 	        var filename = path.join(startPath, files[i]);
 	        var stat = fs.lstatSync(filename);
 	        if (stat.isDirectory()) {
-	            fromDir(filename, filter);
+	            grabAllFiles(filename, filter);
 	        } else if (filename.indexOf(filter) >= 0) {
 	            console.log(filename);
 	            __webpack_require__(24)("./" + filename);
