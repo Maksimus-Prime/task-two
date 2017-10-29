@@ -29,8 +29,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "npm i": "npm install",
-    "prod": "webpack -p",
-    "dev": "webpack-dev-server"
+    "dev": "./node_modules/.bin/webpack-dev-server",
+    "prod": "./node_modules/.bin/webpack -p"
   },
   "repository": {
     "type": "git",
