@@ -1,9 +1,10 @@
 include ../header/header.pug
 include ../skills-item/skills-item.pug
-mixin developer-skills(blockname, blocktheme, list)
+mixin developer-skills(params)
+    - var items = params.skillsItems ? params.skillsItems : [];
     section.developer-skills
         .developer-skills__header
-            +header(blockname, blocktheme)
-        each skill in list.skills
+            +header(params.headerName, params.headerTheme)
+        each item in items
             .developer-skills__item
-                +skills-item(skill.name, skill.value)
+                +skills-item(item.name, item.value)

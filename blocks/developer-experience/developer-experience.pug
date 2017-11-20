@@ -1,9 +1,10 @@
 include ../header/header.pug
 include ../list-item/list-item.pug
-mixin developer-experience(blockname, blocktheme, list)
+mixin developer-experience(params)
+    -var items = params.experienceItems ? params.experienceItems : [];
     section.developer-experience
         .developer-experience__header
-            +header(blockname, blocktheme)
-        each item in list.experience
+            +header(params.headerName, params.headerTheme)
+        each item in items
             .developer-experience__item
                 +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)

@@ -1,7 +1,7 @@
 include ../header/header.pug
-mixin developer-profile(blockname, blocktheme, list)
+mixin developer-profile(params)
     section.developer-profile
         .developer-profile__header
-            +header(blockname, blocktheme)
-        p.developer-profile__description=list.profile.text
-            b=list.profile.majortext
+            +header(params.headerName, params.headerTheme)
+        p.developer-profile__description=params.profileInformation.text
+            b=params.profileInformation.majortext

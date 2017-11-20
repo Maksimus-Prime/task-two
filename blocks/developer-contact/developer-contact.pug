@@ -1,9 +1,10 @@
 include ../header/header.pug
 include ../contact-item/contact-item.pug
-mixin developer-contact(blockname, blocktheme, list)
+mixin developer-contact(params)
+    -var items = params.contactItems ? params.contactItems : [];
     section.developer-contact
         .developer-contact__header
-            +header(blockname, blocktheme)
-        each contact in list.contacts
+            +header(params.headerName, params.headerTheme)
+        each item in items
             .developer-contact__item
-                +contact-item(contact.name, contact.value, contact.type, contact.typevalue)
+                +contact-item(item.name, item.value, item.type, item.typevalue)

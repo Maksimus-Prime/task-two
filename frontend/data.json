@@ -1,27 +1,25 @@
 {
-    "card": {
+    "profileInformation": {
         "image": "img/avatar.jpg",
         "name": "Name here",
         "surname": "Surname",
-        "job": "Graphic Designer"
-    },
-    "profile": {
+        "job": "Graphic Designer",
         "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu",
         "majortext": "pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
     },
-    "contacts": [
+    "contactItems": [
         {"name": "ADDRESS", "value": "Main Street, City"},
         {"name": "E-MAIL", "value": "contact@domain.com", "type": "mail", "typevalue": "contact@domain.com" },
         {"name": "PHONE", "value": "555-555-555", "type": "phone", "typevalue": "+555-555-555" },
         {"name": "WEBSITE", "value": "www.yourweb.com", "type": "site", "typevalue": "www.yourweb.com"}
     ],
-    "skills": [
+    "skillsItems": [
         {"name": "Creative", "value": "9"},
         {"name": "Teamwork", "value": "11"},
         {"name": "Innovate", "value": "6"},
         {"name": "Communication", "value": "11"}
     ],
-    "education": [
+    "educationItems": [
         {
             "name": "Master Degree",
             "titletheme": "default",
@@ -44,7 +42,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         }
     ],
-    "experience": [
+    "experienceItems": [
         {
             "name": "Master Degree",
             "titletheme": "experience",
@@ -67,16 +65,12 @@
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         }
     ],
-    "software": {
-        "left": [
-            {"name": "Photoshop", "value": "90.1"},
-            {"name": "ILLUSTRATOR", "value": "70.5"},
-            {"name": "INDESIGN", "value": "56"}
-        ],
-        "right": [
-            {"name": "DREAMWEAVER", "value": "82.6"},
-            {"name": "AFTER EFFECTS", "value": "61.6"},
-            {"name": "HTML&CSS3", "value": "90.5"}
-        ]
-    }
+    "softwareItems": [
+        {"name": "Photoshop", "value": "90.1"},
+        {"name": "ILLUSTRATOR", "value": "70.5"},
+        {"name": "INDESIGN", "value": "56"},
+        {"name": "DREAMWEAVER", "value": "82.6"},
+        {"name": "AFTER EFFECTS", "value": "61.6"},
+        {"name": "HTML&CSS3", "value": "90.5"}
+    ]
 }

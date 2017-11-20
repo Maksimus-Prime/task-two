@@ -1,14 +1,17 @@
 include ../header/header.pug
 include ../software-item/software-item.pug
-mixin developer-software(headername, headertheme, list)
+mixin developer-software(params)
+    -var items = params.softwareItems ? params.softwareItems : [];
     section.developer-software
         .developer-software__header
-            +header(headername, headertheme)
+            +header(params.headerName, params.headerTheme)
         .developer-software__left-column
-            each item in list.software.left
-                .developer-software__item
-                    +software-item(item.name, item.value)
+            each item, index in items
+                -if( index < 3 )
+                    .developer-software__item
+                        +software-item(item.name, item.value)
         .developer-software__right-column
-            each item1 in list.software.right
-                .developer-software__item
-                    +software-item(item1.name, item1.value)
+            each item, index in items
+                -if( index >= 3 && index < 6 )
+                    .developer-software__item
+                        +software-item(item.name, item.value)

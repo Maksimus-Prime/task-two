@@ -25,17 +25,17 @@ html
         main.layout
             .layout-left-column
                 .layout-left-column__item
-                    +developer-card(data)
+                    +developer-card({ profileInformation: data.profileInformation })
                 .layout-left-column__item
-                    +developer-profile("Profile", "profile", data)
+                    +developer-profile({headerName: "Profile", headerTheme: "profile", profileInformation: data.profileInformation})
                 .layout-left-column__item
-                    +developer-contact("Contact", "contact", data)
+                    +developer-contact({headerName: "Contact", headerTheme: "contact", contactItems: data.contactItems})
                 .layout-left-column__item
-                    +developer-skills("Skills", "skills", data)
+                    +developer-skills({headerName: "Skills", headerTheme: "skills", skillsItems: data.skillsItems})
             .layout-right-column
                 .layout-right-column__item
-                    +developer-education("Education", "education", data)
+                    +developer-education({headerName: "Education", headerTheme: "education", educationItems: data.educationItems})
                 .layout-right-column__item
-                    +developer-experience("Experience", "experience", data)
+                    +developer-experience({headerName: "Experience", headerTheme: "experience", experienceItems: data.experienceItems})
                 .layout-right-column__item
-                    +developer-software("Software", "software", data)
+                    +developer-software({headerName: "Software", headerTheme: "software", softwareItems: data.softwareItems})

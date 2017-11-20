@@ -1,9 +1,10 @@
 include ../header/header.pug
 include ../list-item/list-item.pug
-mixin developer-education(blockname, blocktheme, list)
+mixin developer-education(params)
+    -var items = params.educationItems ? params.educationItems : [];
     section.developer-education
         .developer-education__header
-            +header(blockname, blocktheme)
-        each item in list.education
+            +header(params.headerName, params.headerTheme)
+        each item in items
             .developer-education__item
                 +list-item(item.name, item.titletheme, item.date, item.subtitle, item.description)

@@ -1,7 +1,7 @@
-mixin developer-card(data)
+mixin developer-card(params)
     section.developer-card
         .developer-card__photo
-            img.developer-card__image(src=data.card.image alt="developer's avatar")
-        .developer-card__name=data.card.name
-        .developer-card__surname=data.card.surname
-        .developer-card__job=data.card.job
+            img.developer-card__image(src=params.profileInformation.image alt="developer's avatar")
+        .developer-card__name=params.profileInformation.name
+        .developer-card__surname=params.profileInformation.surname
+        .developer-card__job=params.profileInformation.job
