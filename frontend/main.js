@@ -1,5 +1,3 @@
-require("./style.less");
-require.context("./../blocks",true,/\.js$/);
+import "./style.less";
 import './favicons/favicons';
-require.context("./../blocks",true,/\.less$/);
-require.context("./../blocks",true,/\.(jpe?g|png|svg|gif)$/);
+require.context("./../blocks",true,/\.(js|less|jpe?g|png|svg|gif)$/);
