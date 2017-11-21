@@ -1,4 +1,6 @@
 mixin skills-item(title,value)
+    -var title = title ? title : "Title";
+    -var value = value ? value : 1;
     section.skills-item
         h4.skills-item__title=title
         ul.skills-item__rating

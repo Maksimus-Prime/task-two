@@ -1,7 +1,11 @@
-mixin list-item(title, titletheme, date, subtitle, description)
-    -var titletheme = (titletheme !== "default")? "list-item__title_theme_"+titletheme : "";
+mixin list-item(title, titleTheme, date, subtitle, description)
+    -var title = title ? title : "Title";
+    -var titleTheme = (titleTheme !== "default")? "list-item__title_theme_"+titleTheme : "";
+    -var date = date ? date : "Month and Year";
+    -var subtitle = subtitle ? subtitle : "Subtitle";
+    -var description = description ? description : "Description";
     section.list-item
-        h4.list-item__title(class=titletheme)=title
+        h4.list-item__title(class=titleTheme)=title
             span.list-item__date=date
         span.list-item__subtitle=subtitle
         p.list-item__description=description

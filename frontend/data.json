@@ -5,13 +5,13 @@
         "surname": "Surname",
         "job": "Graphic Designer",
         "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu",
-        "majortext": "pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
+        "majorText": "pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
     },
     "contactItems": [
         {"name": "ADDRESS", "value": "Main Street, City"},
-        {"name": "E-MAIL", "value": "contact@domain.com", "type": "mail", "typevalue": "contact@domain.com" },
-        {"name": "PHONE", "value": "555-555-555", "type": "phone", "typevalue": "+555-555-555" },
-        {"name": "WEBSITE", "value": "www.yourweb.com", "type": "site", "typevalue": "www.yourweb.com"}
+        {"name": "E-MAIL", "value": "contact@domain.com", "type": "mail", "typeValue": "contact@domain.com" },
+        {"name": "PHONE", "value": "555-555-555", "type": "phone", "typeValue": "+555-555-555" },
+        {"name": "WEBSITE", "value": "www.yourweb.com", "type": "site", "typeValue": "www.yourweb.com"}
     ],
     "skillsItems": [
         {"name": "Creative", "value": "9"},
@@ -22,21 +22,21 @@
     "educationItems": [
         {
             "name": "Master Degree",
-            "titletheme": "default",
+            "titleTheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         {
             "name": "Master Degree",
-            "titletheme": "default",
+            "titleTheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         {
             "name": "Master Degree",
-            "titletheme": "default",
+            "titleTheme": "default",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
@@ -45,21 +45,21 @@
     "experienceItems": [
         {
             "name": "Master Degree",
-            "titletheme": "experience",
+            "titleTheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         {
             "name": "Master Degree",
-            "titletheme": "experience",
+            "titleTheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         
         },
         {
             "name": "Master Degree",
-            "titletheme": "experience",
+            "titleTheme": "experience",
             "date": "// Feb 2011 - Jun 2014",
             "subtitle": "UNIVERSITY NAME",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'"         

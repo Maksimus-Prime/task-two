@@ -1,3 +1,5 @@
 mixin header(title, theme)
+    -var title = title ? title : "Header";
+    -var theme = theme ? theme : "education";
     header.header(class="header_icon_" + theme)
         h3.header__title=title
